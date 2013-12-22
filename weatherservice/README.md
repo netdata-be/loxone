@@ -23,10 +23,20 @@ Beware of
 
 Note: once you have it in the loxplan it will port through all updates etc.
 
+# Developer documentation #
+
+Here you can find all dev related stuff I could find on the NET
+
+## Small things to note ##
+
+  * Time values are indicated in seconds since 1.1.2009 0 UTC clock. ( 1230768000 in epoch )
+  * An integer has 32 bits, little-endian.
+  * Outputs with printf will be written to the log window of Loxone Config.
+
 ## setweatherdata ##
 
     int setweatherdata(int type,unsigned int time,float value);
-    
+
 
 
 Type |Description                    | Extra info
