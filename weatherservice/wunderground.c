@@ -16,6 +16,7 @@
 #define BUFF_SIZE 80000
 #define RD_BLOCK_SIZE 128
 #define REFRESH_MIN 15 // refresh elke 15 minuten (developer account kan 500 calls per dag doen; =20 calls per uur)
+#define DEBUG_LEVEL 0  // 0 = disable ; 1 = INFO ; 2 = DEBUG
 
 // Settings
 // create yourself a (free) developer account on wunderground website; it can handdle up to 500 calls/day for free.
@@ -24,10 +25,8 @@ char* location = "51.2913,4.94935"; 	// your location
 char* host     = "api.wunderground.com";
 
 
-
 // Helper methods
 char* position;
-
 char* downloadData()
 {
   char device[255];
@@ -56,7 +55,6 @@ char* downloadData()
   return (char*)buffer;
 }
 
-
 int moveToKey(char* key)
 {
   //printf("moving to %s, current pos %d", key, (int)position);
@@ -75,6 +73,7 @@ char* readStringValue(char* key, int stripEnd)
 {
   char value[50];
   value[49] = '\0';
+
   if (moveToKey(key) > 0)
   {
     char* valueStart = (char*)((int)position + strlen(key));
@@ -139,12 +138,18 @@ void parseHourly()
 {
   int timestamp = readIntValue("<epoch>") - 1230768000;
   if (moveToKey("<temp>")) setweatherdata(1, timestamp, readFloatValue("<metric>"));
+  if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Forecasted temp = %d", readFloatValue("<metric>"));
   if (moveToKey("<dewpoint>")) setweatherdata(2, timestamp, readFloatValue("<metric>"));
   int weatherCode = parseWeatherCode(readStringValue("<condition>", 0));
-  if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
+  if (weatherCode > 0) 
+  {
+    if (DEBUG_LEVEL > 0 ) printf("INFO: WeatherCode = %d",weatherCode);
+    setweatherdata(10, timestamp, weatherCode);
+  }
   if (moveToKey("<wspd>")) setweatherdata(4, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<wdir>")) setweatherdata(5, timestamp, readIntValue("<degrees>"));
   setweatherdata(3, timestamp, readIntValue("<humidity>"));
+  if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
   if (moveToKey("<feelslike>")) setweatherdata(26, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<mslp>")) setweatherdata(11, timestamp, readIntValue("<metric>"));
 }
@@ -154,45 +159,45 @@ void parseWeather()
   // Current observation
   if (moveToKey("<current_observation>") > 0) 
   {
-    // nog iets serieus fout met inlezen van die waarden; vindt die niet terug in de UI, en ook foute data.
-    printf("Wunderground values <observation_time>: %s" ,readStringValue("<observation_time>",0));
+    if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting current weather");
+    printf("weatherservice [INFO]: Wunderground observation time: %s", readStringValue("<observation_time>",0));
     int timestamp = readIntValue("<observation_epoch>") - 1230768000;
     int weatherCode = parseWeatherCode(readStringValue("<weather>", 0));
     if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
-    setweatherdata(1, timestamp, readFloatValue("<temp_c>"));
-    setweatherdata(3, timestamp, readPercentageValue("<relative_humidity>"));
-    setweatherdata(5, timestamp, readIntValue("<wind_degrees>"));
-    setweatherdata(4, timestamp, readFloatValue("<wind_kph>"));
+    setweatherdata(1,  timestamp, readFloatValue("<temp_c>"));
+    if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Current temp = %d", readFloatValue("<temp_c>"));
+    setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
+    setweatherdata(3,  timestamp, readPercentageValue("<relative_humidity>"));
+    setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
+    setweatherdata(5,  timestamp, readIntValue("<wind_degrees>"));
+    setweatherdata(9,  timestamp, readFloatValue("<precip_today_metric>"));
     setweatherdata(11, timestamp, readIntValue("<pressure_mb>"));
-    setweatherdata(2, timestamp, readFloatValue("<dewpoint_c>"));
-    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
-    setweatherdata(9, timestamp, readFloatValue("<precip_today_metric>"));
-    setweatherdata(22, timestamp, getcurrenttime());
-    // 			setweatherdata(23, timestamp, getcurrenttime());
-    setweatherdata(23, timestamp, timestamp);
     setweatherdata(12, timestamp, readIntValue("<observation_epoch>"));
+    setweatherdata(22, timestamp, getcurrenttime());
+    setweatherdata(23, timestamp, timestamp);
+    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
   }
+
   // Hourly forecasts
+  int i = 0;
   if (moveToKey("<hourly_forecast>") > 0)
   {
     while (moveToKey("<forecast>") > 0)
     {
+      i++;
+      if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%d hour",i);
       parseHourly();
     }
   }
 }
 
-
 // Main loop
-//printf("Om Wunderground.com weer service te doen werken moet de lijn char *data = downloadData() uit commentaar gehaald worden.");
 while(TRUE)
 {
   char* data = downloadData();
-  printf("Wunderground xml data length: %d", strlen(data));
+  printf("weatherservice [INFO]: Wunderground xml data length: %d", strlen(data));
   position = data;
   parseWeather();
   free(data);
-  // refresh elke REFRESH_MIN minuten
-  // vb REFRESH_MIN = 15: wunderground.com developer account kan 500 calls/day; 15/min = 20/h = 480/d.
   sleeps(REFRESH_MIN * 60);
 }
