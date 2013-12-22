@@ -40,7 +40,7 @@ Type |Description                    | Extra info
 7    | Abs. Radiation                |
 8    | Rel. Radiation                |
 9    | Precipitaion                  |
-10   | Weather Type                  |[See weather type for valid return codes](.#Weathertype)
+10   | Weather Type                  |[See weather type for valid return codes](.#Weather-type)
 11   | Air Pressure                  |
 12   | Custom 1                      |
 13   | Custom 2                      |
