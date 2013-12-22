@@ -3,8 +3,8 @@
 // Loxone Wunderground weather service script
 //
 // This program calls the wunderground.com weather web service.
-// The return value is a JSON string. Since PicoC does not support
-// JSON so the string needs to be scraped to find the values.
+// The return value is a XML document. Since PicoC does not support
+// XML so the string needs to be scraped to find the values.
 
 // initially adapted from Paul Sinnema's website "Poor man's weather station" 
 // at http://sinnema.ch/?cat=11
@@ -19,9 +19,9 @@
 
 // Settings
 // create yourself a (free) developer account on wunderground website; it can handdle up to 500 calls/day for free.
-char* apiKey = "f5828ac38f534229"; 	// your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
+char* apiKey   = "f5828ac38f534229"; 	// your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
 char* location = "51.2913,4.94935"; 	// your location
-char* host = "api.wunderground.com";
+char* host     = "api.wunderground.com";
 
 
 
