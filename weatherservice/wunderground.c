@@ -8,7 +8,7 @@
 
 // initially adapted from Paul Sinnema's website "Poor man's weather station" 
 // at http://sinnema.ch/?cat=11
-// 
+//
 // Now using the www.wunderground.com website leveraging Jasper's code on:
 // http://forum.loxone.com/enen/faqs-tutorials-and-howto-s/2131-creating-your-own-weather-service-when-loxone-s-weather-service-is-not-available-6.html> 
 
@@ -79,7 +79,7 @@ char* readStringValue(char* key, int stripEnd)
     char* valueStart = (char*)((int)position + strlen(key));
     int valueLen = strfind(valueStart, "</", 0);
     strncpy(value, valueStart, valueLen - stripEnd);
-    // hier enablen om alle ontvangen keys te lezen 
+    // hier enablen om alle ontvangen keys te lezen
     // printf("%s = %s", key, value);
   }
   return value;
@@ -102,34 +102,34 @@ float readPercentageValue(char* key)
 
 int parseWeatherCode(char* code)
 {
-  if (strcmp(code, "Clear") == 0) return 2;
-  if (strcmp(code, "Scattered Clouds") == 0) return 3;
-  if (strcmp(code, "Partly Cloudy") == 0) return 3;
-  if (strcmp(code, "Mostly Cloudy") == 0) return 4;
-  if (strcmp(code, "Mostly Sunny") == 0) return 1;
-  if (strcmp(code, "Cloudy") == 0) return 5;
-  if (strcmp(code, "Overcast") == 0) return 7;
-  if (strcmp(code, "Small Hail") == 0) return 25;
+  if (strcmp(code, "Clear") == 0)                   return 2;
+  if (strcmp(code, "Scattered Clouds") == 0)        return 3;
+  if (strcmp(code, "Partly Cloudy") == 0)           return 3;
+  if (strcmp(code, "Mostly Cloudy") == 0)           return 4;
+  if (strcmp(code, "Mostly Sunny") == 0)            return 1;
+  if (strcmp(code, "Cloudy") == 0)                  return 5;
+  if (strcmp(code, "Overcast") == 0)                return 7;
+  if (strcmp(code, "Small Hail") == 0)              return 25;
   if (strfind(code, "Heavy Freezing Rain", 0) >= 0) return 15;
-  if (strfind(code, "Heavy Rain Showers", 0) >= 0) return 17;
-  if (strfind(code, "Rain Showers", 0) >= 0) return 16;
-  if (strfind(code, "Freezing Rain", 0) >= 0) return 14;
-  if (strfind(code, "Light Rain", 0) >= 0) return 10;
-  if (strfind(code, "Heavy Rain", 0) >= 0) return 12;
-  if (strfind(code, "Heavy Sleet", 0) >= 0) return 27;
-  if (strfind(code, "Light Sleet", 0) >= 0) return 25;
-  if (strfind(code, "Sleet", 0) >= 0) return 26;
-  if (strfind(code, "Heavy Thunderstorm", 0) >= 0) return 19;
-  if (strfind(code, "Thunderstorm", 0) >= 0) return 18;
-  if (strfind(code, "Heavy Snow Showers", 0) >= 0) return 24;
-  if (strfind(code, "Snow Showers", 0) >= 0) return 23;
-  if (strfind(code, "Rain", 0) >= 0) return 11;
-  if (strfind(code, "Heavy Snow", 0) >= 0) return 22;
-  if (strfind(code, "Light Snow", 0) >= 0) return 20;
-  if (strfind(code, "Snow", 0) >= 0) return 21;
-  if (strfind(code, "Drizzle", 0) >= 0) return 13;
-  if (strfind(code, "Fog", 0) >= 0) return 6;
-  if (strfind(code, "Sunny", 0) >= 0) return 2;
+  if (strfind(code, "Heavy Rain Showers", 0) >= 0)  return 17;
+  if (strfind(code, "Rain Showers", 0) >= 0)        return 16;
+  if (strfind(code, "Freezing Rain", 0) >= 0)       return 14;
+  if (strfind(code, "Light Rain", 0) >= 0)          return 10;
+  if (strfind(code, "Heavy Rain", 0) >= 0)          return 12;
+  if (strfind(code, "Heavy Sleet", 0) >= 0)         return 27;
+  if (strfind(code, "Light Sleet", 0) >= 0)         return 25;
+  if (strfind(code, "Sleet", 0) >= 0)               return 26;
+  if (strfind(code, "Heavy Thunderstorm", 0) >= 0)  return 19;
+  if (strfind(code, "Thunderstorm", 0) >= 0)        return 18;
+  if (strfind(code, "Heavy Snow Showers", 0) >= 0)  return 24;
+  if (strfind(code, "Snow Showers", 0) >= 0)        return 23;
+  if (strfind(code, "Rain", 0) >= 0)                return 11;
+  if (strfind(code, "Heavy Snow", 0) >= 0)          return 22;
+  if (strfind(code, "Light Snow", 0) >= 0)          return 20;
+  if (strfind(code, "Snow", 0) >= 0)                return 21;
+  if (strfind(code, "Drizzle", 0) >= 0)             return 13;
+  if (strfind(code, "Fog", 0) >= 0)                 return 6;
+  if (strfind(code, "Sunny", 0) >= 0)               return 2;
   //  printf("No weather code mapping for %s", code);
   return -1;
 }
@@ -138,18 +138,19 @@ void parseHourly()
 {
   int timestamp = readIntValue("<epoch>") - 1230768000;
   if (moveToKey("<temp>")) setweatherdata(1, timestamp, readFloatValue("<metric>"));
-  if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Forecasted temp = %d", readFloatValue("<metric>"));
+  if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: timestamp for weather = %d", timestamp);
+  if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted temp = %d", readFloatValue("<metric>"));
   if (moveToKey("<dewpoint>")) setweatherdata(2, timestamp, readFloatValue("<metric>"));
   int weatherCode = parseWeatherCode(readStringValue("<condition>", 0));
-  if (weatherCode > 0) 
+  if (weatherCode > 0)
   {
-    if (DEBUG_LEVEL > 0 ) printf("INFO: WeatherCode = %d",weatherCode);
+    if (DEBUG_LEVEL > 1 ) printf("INFO: WeatherCode = %d",weatherCode);
     setweatherdata(10, timestamp, weatherCode);
   }
   if (moveToKey("<wspd>")) setweatherdata(4, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<wdir>")) setweatherdata(5, timestamp, readIntValue("<degrees>"));
   setweatherdata(3, timestamp, readIntValue("<humidity>"));
-  if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
+  if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
   if (moveToKey("<feelslike>")) setweatherdata(26, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<mslp>")) setweatherdata(11, timestamp, readIntValue("<metric>"));
 }
@@ -157,15 +158,16 @@ void parseHourly()
 void parseWeather()
 {
   // Current observation
-  if (moveToKey("<current_observation>") > 0) 
+  if (moveToKey("<current_observation>") > 0)
   {
     if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting current weather");
     printf("weatherservice [INFO]: Wunderground observation time: %s", readStringValue("<observation_time>",0));
     int timestamp = readIntValue("<observation_epoch>") - 1230768000;
+    if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: timestamp for weather = %d", timestamp);
     int weatherCode = parseWeatherCode(readStringValue("<weather>", 0));
     if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
     setweatherdata(1,  timestamp, readFloatValue("<temp_c>"));
-    if (DEBUG_LEVEL == 2 ) printf("weatherservice [DEBUG]: Current temp = %d", readFloatValue("<temp_c>"));
+    if (DEBUG_LEVEL > 0 ) printf("weatherservice [DEBUG]: Current temp = %f", readFloatValue("<temp_c>"));
     setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
     setweatherdata(3,  timestamp, readPercentageValue("<relative_humidity>"));
     setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
