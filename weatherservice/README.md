@@ -1,4 +1,4 @@
-# Adding a weather service
+# Step 1: Adding a weather service
 
 You can add a weather service by opening the loxplan file with notepad
 And insert XML tags below after this line:
@@ -14,14 +14,41 @@ So here's the tag to insert:
     </Control>
 
 Then save the file and open in loxplan. You will see myweather in the server communication section.
-You can add code there and if you do you can call setweatherdata.
-I have it up and running now for a couple of months and works quite ok.
 
 Beware of
   1 memory leaks though, and keep a spare micro SD at hand in case you mess with the code a lot.
   2 The UUID and visuUUID and usergroupref work perfectly in my setup and I guess these are defaults. However if they are different in your loxplan I cannot predict what happens. Create a backup of your own config before playing with my config.
 
 Note: once you have it in the loxplan it will port through all updates etc.
+
+# Step 2: Add the PicoC to your project #
+
+# Step 3: Use the weather service inside your program #
+
+Currently there is an issue with all Loxone version in regard to the `setweatherdata` call.
+The weather data is set and visible inside the webinterface and inside the mobile app, however when using the weather data inside your loxone project, it never get's updated.
+After creating a support ticket at loxone I received the following answer:
+
+    I have made a note on the lack of documentation on the weatherdata scripts specifically,
+    and also looking into possible issues with the PicoC functions.
+    This has all been forwarded for action, however this may take some time,
+    and I understand you would like this issue resolved.
+    
+    I have therefore developed a workaround that still achieves the desired result for you.
+
+The workaround I received was to set a `Virtual Input` at the certain value and use this `Virtual Input` in your project, so not the actual weatherdata.
+
+The following `Virtual Inputs` are set by the PicoC program:
+
+  * `currentOutsideTemp` - Is set the to current Temperature
+  * outsideTemp_offset_hour_1` - Is set to the what the temp will be after 1 hour
+  * `outsideTemp_offset_hour_2` - Is set to the what the temp will be after 2 hour
+  * `outsideTemp_offset_hour_3` - Is set to the what the temp will be after 3 hour
+  * `...`
+  * `outsideTemp_offset_hour_x` - Is set to the what the temp will be after x hours
+
+So create the `Virtual Inputs` you would like to use and add them to your project.
+
 
 # Developer documentation #
 
