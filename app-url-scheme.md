@@ -182,7 +182,7 @@ Using the info from the previous sections, you can now build up a variety of URL
 directly take you to almost any screen in the app.
 *
 Examples
-*
+
     loxone{hd}://{user}@{url/ip/snr}/Room/{RNr}/Category/{CNr}/Function/{uuid}
 
 The above link is going to take you to the function overview of `{uuid}`. It is laid as a layer
