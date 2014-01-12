@@ -59,12 +59,15 @@ The following `Virtual Inputs` are set by the PicoC program:
 So create the `Virtual Inputs` you would like to use and add them to your project.
 
 This image shows the properties of the Virtual Input
+
 ![Alt text](https://raw2.github.com/netdata/loxone/master/img/virtual_input_properties.png "Loxone weater service virtual inputs")
 
 This image shows the live view
+
 ![Alt text](https://raw2.github.com/netdata/loxone/master/img/virtual_inputs.png "Loxone weater Virtual Input liveview")
 
 And if you look at the webinterface weather you will notice it has the same values:
+
 ![Alt text](https://raw2.github.com/netdata/loxone/master/img/weather_service_webinterface.png "Loxone weater service webinterface")
 
 # Developer documentation #
