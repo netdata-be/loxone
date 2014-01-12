@@ -20,8 +20,8 @@
 
 // Settings
 // create yourself a (free) developer account on wunderground website; it can handdle up to 500 calls/day for free.
-char* apiKey   = "f5828ac38f534229";     // your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
-char* location = "51.2913,4.94935";      // your location
+char* apiKey   = "YOUR-API-KEY";         // your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
+char* location = "YOUR-LOCATION";        // your location
 char* host     = "api.wunderground.com"; // The API URL in orde to get this working you need to use a DNS server
 
 
