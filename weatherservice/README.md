@@ -32,6 +32,12 @@ Copy paste the PicoC code inside the programm.
 
 ![Alt text](https://raw2.github.com/netdata/loxone/master/img/myweather.png "Loxone weather service object")
 
+After pasting you have to change a couple of settings at the top:
+
+    char* apiKey   = "YOUR-API-KEY";     // your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
+    char* location = "YOUR-LOCATION";    // your location
+
+
 # Step 3: Use the weather service inside your program #
 
 Currently there is an issue with all Loxone version in regard to the `setweatherdata` call.
