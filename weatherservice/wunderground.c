@@ -136,8 +136,8 @@ int parseWeatherCode(char* code)
 
 void parseHourly(int hour_offset)
 {
-  if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%d hour",i);
-  char* temperature_var;
+  if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%d hour",hour_offset);
+  char temperature_var[50];
   sprintf(temperature_var, "outsideTemp_offset_hour_%d", hour_offset);
   int timestamp = readIntValue("<epoch>") - 1230768000;
   if (moveToKey("<temp>")) setweatherdata(1, timestamp, readFloatValue("<metric>"));
@@ -157,6 +157,7 @@ void parseHourly(int hour_offset)
   if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
   if (moveToKey("<feelslike>")) setweatherdata(26, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<mslp>")) setweatherdata(11, timestamp, readIntValue("<metric>"));
+  free(temperature_var);
 }
 
 void parseWeather()
