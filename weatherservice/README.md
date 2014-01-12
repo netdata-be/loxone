@@ -27,6 +27,9 @@ Note: once you have it in the loxplan it will port through all updates etc.
 
 # Step 2: Add the PicoC to your project #
 
+![Alt text](https://raw2.github.com/netdata/loxone/master/img/myweather.png "Loxone weather service object")
+
+
 # Step 3: Use the weather service inside your program #
 
 Currently there is an issue with all Loxone version in regard to the `setweatherdata` call.
