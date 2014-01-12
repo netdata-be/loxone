@@ -134,12 +134,16 @@ int parseWeatherCode(char* code)
   return -1;
 }
 
-void parseHourly()
+void parseHourly(int hour_offset)
 {
+  if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%d hour",i);
+  char* temperature_var;
+  sprintf(temperature_var, "outsideTemp_offset_hour_%d", hour_offset);
   int timestamp = readIntValue("<epoch>") - 1230768000;
   if (moveToKey("<temp>")) setweatherdata(1, timestamp, readFloatValue("<metric>"));
   if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: timestamp for weather = %d", timestamp);
   if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted temp = %d", readFloatValue("<metric>"));
+  setio(temperature_var, readFloatValue("<metric>"));
   if (moveToKey("<dewpoint>")) setweatherdata(2, timestamp, readFloatValue("<metric>"));
   int weatherCode = parseWeatherCode(readStringValue("<condition>", 0));
   if (weatherCode > 0)
@@ -167,7 +171,7 @@ void parseWeather()
     int weatherCode = parseWeatherCode(readStringValue("<weather>", 0));
     if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
     setweatherdata(1,  timestamp, readFloatValue("<temp_c>"));
-    if (DEBUG_LEVEL > 0 ) printf("weatherservice [DEBUG]: Current temp = %f", readFloatValue("<temp_c>"));
+    setio("currentOutsideTemp", readFloatValue("<temp_c>"));
     setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
     setweatherdata(3,  timestamp, readPercentageValue("<relative_humidity>"));
     setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
@@ -187,8 +191,7 @@ void parseWeather()
     while (moveToKey("<forecast>") > 0)
     {
       i++;
-      if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%d hour",i);
-      parseHourly();
+      parseHourly(i);
     }
   }
 }
