@@ -76,6 +76,11 @@ And if you look at the webinterface weather you will notice it has the same valu
 
 ![Alt text](https://raw2.github.com/netdata/loxone/master/img/weather_service_webinterface.png "Loxone weater service webinterface")
 
+And finally if you use the virtual input in your visualization it looks like this:
+
+![Alt text](https://raw2.github.com/netdata/loxone/master/img/outside_temp_graph.png "Loxone weater service webinterface")
+
+
 # Developer documentation #
 
 Here you can find all dev related stuff I could find on the NET
