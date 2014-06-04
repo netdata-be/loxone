@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlList Version="75" NextObj="5" NextConst="1" NextNote="1" NextMem="3">
+	<C Type="Document" V="70" U="0a3375c5-02bf-11ca-ffff112233445566" Title="applamp-mighlight-example" PaperFormat="3" Font="Arial" FontSize="8" SPSfreq="100" OpenIsHigh="false" Date="2014-06-04 20:16:46" DateS="171145006" Town="Turnhout, kapelweg 72" Ctry="" Latitude="48.2" Longitude="13.36" Creator="" Currency=""/>
+	<C Type="IconCaptionState" V="70" U="0a3375c5-02c9-11cb-ffff112233445566" Title="Statussymbolen"/>
+	<C Type="IconState" V="70" U="00000000-0000-0001-2200000000000000" Title="Niet toegewezen "/>
+	<C Type="IconState" V="70" U="00000000-0000-0002-2200000000000000" Title="Zware fout" Ix="1"/>
+	<C Type="IconState" V="70" U="00000000-0000-0003-2200000000000000" Title="Kleine fout" Ix="2"/>
+	<C Type="IconState" V="70" U="00000000-0000-0004-2200000000000000" Title="Waarschuwing " Ix="3"/>
+	<C Type="IconState" V="70" U="00000000-0000-0005-2200000000000000" Title="Info " Ix="4"/>
+	<C Type="IconState" V="70" U="00000000-0000-0006-2200000000000000" Title="Neutraal" Ix="5"/>
+	<C Type="IconState" V="70" U="00000000-0000-0007-2200000000000000" Title="Actief" Ix="6"/>
+	<C Type="IconState" V="70" U="00000000-0000-0008-2200000000000000" Title="Inactief" Ix="7"/>
+	<C Type="IconState" V="70" U="00000000-0000-0009-2200000000000000" Title="Alarm " Ix="8"/>
+	<C Type="IconState" V="70" U="00000000-0000-000a-2200000000000000" Title="Geactiveerd" Ix="9"/>
+	<C Type="IconState" V="70" U="00000000-0000-000b-2200000000000000" Title="Deactiveert" Ix="10"/>
+	<C Type="IconState" V="70" U="00000000-0000-000c-2200000000000000" Title="Boven" Ix="11"/>
+	<C Type="IconState" V="70" U="00000000-0000-000d-2200000000000000" Title="Midden" Ix="12"/>
+	<C Type="IconState" V="70" U="00000000-0000-000e-2200000000000000" Title="Onder" Ix="13"/>
+	<C Type="IconState" V="70" U="00000000-0000-000f-2200000000000000" Title="Op" Ix="14"/>
+	<C Type="IconState" V="70" U="00000000-0000-0010-2200000000000000" Title="Dicht" Ix="15"/>
+	<C Type="IconState" V="70" U="00000000-0000-0011-2200000000000000" Title="Aan" Ix="16"/>
+	<C Type="IconState" V="70" U="00000000-0000-0012-2200000000000000" Title="Uit" Ix="17"/>
+	<C Type="IconState" V="70" U="00000000-0000-0013-2200000000000000" Title="Vol" Ix="18"/>
+	<C Type="IconState" V="70" U="00000000-0000-0014-2200000000000000" Title="Leeg" Ix="19"/>
+	<C Type="IconState" V="70" U="00000000-0000-0015-2200000000000000" Title="Klaar" Ix="20"/>
+	<C Type="IconState" V="70" U="00000000-0000-0016-2200000000000000" Title="In werking" Ix="21"/>
+	<C Type="IconState" V="70" U="00000000-0000-0017-2200000000000000" Title="Warm" Ix="22"/>
+	<C Type="IconState" V="70" U="00000000-0000-0018-2200000000000000" Title="Koud" Ix="23"/>
+	<C Type="IconState" V="70" U="00000000-0000-0019-2200000000000000" Title="Web-pagina" Ix="24"/>
+	<C Type="CategoryCaption" V="70" U="0a3375c5-02c9-11cc-ffff112233445566" Title="Categorieën"/>
+	<C Type="IconCaptionCat" V="70" U="0a3375c5-02c9-11ce-ffff112233445566" Title=" Symbolen"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0001-2000000000000000" Title="Niet toegewezen "/>
+	<C Type="IconCat" V="70" U="00000000-0000-0002-2000000000000000" Title="Verlichting " Ix="1"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0003-2000000000000000" Title="Beschaduwing" Ix="2"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0004-2000000000000000" Title="Verwarming" Ix="3"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0005-2000000000000000" Title="Airco" Ix="4"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0006-2000000000000000" Title="Audio " Ix="5"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0007-2000000000000000" Title="Sensor" Ix="6"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0008-2000000000000000" Title="Verwarmingsventiel" Ix="7"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0009-2000000000000000" Title="Temperatuur" Ix="8"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000a-2000000000000000" Title="Detector" Ix="9"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000b-2000000000000000" Title="Ventilatie" Ix="10"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000c-2000000000000000" Title="Venster" Ix="11"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000d-2000000000000000" Title="Bewaking" Ix="12"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000e-2000000000000000" Title="Koeling " Ix="13"/>
+	<C Type="IconCat" V="70" U="00000000-0000-000f-2000000000000000" Title="Alarm " Ix="14"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0010-2000000000000000" Title="Poort" Ix="15"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0011-2000000000000000" Title="Wellness" Ix="16"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0012-2000000000000000" Title="Technik" Ix="17"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0013-2000000000000000" Title="Audio 2" Ix="18"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0014-2000000000000000" Title="Verlichting 2" Ix="19"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0015-2000000000000000" Title="Temperatuur 2" Ix="20"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0016-2000000000000000" Title="Detector 2" Ix="21"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0017-2000000000000000" Title="Alarm 2" Ix="22"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0018-2000000000000000" Title="Audio 3" Ix="23"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0019-2000000000000000" Title="Venster 2" Ix="24"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001a-2000000000000000" Title="Verwarming 2" Ix="25"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001b-2000000000000000" Title="Verwarming ventiel 2" Ix="26"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001c-2000000000000000" Title="Techniek 2" Ix="27"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001d-2000000000000000" Title="Poort 2" Ix="28"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001e-2000000000000000" Title="Computer" Ix="29"/>
+	<C Type="IconCat" V="70" U="00000000-0000-001f-2000000000000000" Title="Computer 2" Ix="30"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0020-2000000000000000" Title="Toegang" Ix="31"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0021-2000000000000000" Title="Toegang 2" Ix="32"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0022-2000000000000000" Title="Verbruiker" Ix="33"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0023-2000000000000000" Title="Verbruiker 2" Ix="34"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0024-2000000000000000" Title="Irrigatie" Ix="35"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0025-2000000000000000" Title="Irrigatie 2" Ix="36"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0026-2000000000000000" Title="Fotovoltaïek" Ix="37"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0027-2000000000000000" Title="Bewaking 2" Ix="38"/>
+	<C Type="IconCat" V="70" U="00000000-0000-0028-2000000000000000" Title="Toegang 3" Ix="39"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0001-0d00000000000000" Title="Niet toegewezen " Icon="00000000-0000-0001-2000000000000000" First="true"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0002-0d00000000000000" Title="Verlichting " Icon="00000000-0000-0002-2000000000000000" Rating="5"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0003-0d00000000000000" Title="Beschaduwing" Icon="00000000-0000-0003-2000000000000000" Rating="5"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0004-0d00000000000000" Title="Verwarming" Icon="00000000-0000-0004-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0005-0d00000000000000" Title="Airco" Icon="00000000-0000-0005-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0006-0d00000000000000" Title="Audio " Icon="00000000-0000-0006-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0007-0d00000000000000" Title="Sensor" Icon="00000000-0000-0007-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0008-0d00000000000000" Title="Verwarmingsventiel" Icon="00000000-0000-0008-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0009-0d00000000000000" Title="Temperatuur" Icon="00000000-0000-0009-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000a-0d00000000000000" Title="Detector" Icon="00000000-0000-000a-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000b-0d00000000000000" Title="Ventilatie" Icon="00000000-0000-000b-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000c-0d00000000000000" Title="Venster" Icon="00000000-0000-000c-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000d-0d00000000000000" Title="Bewaking" Icon="00000000-0000-000d-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000e-0d00000000000000" Title="Koeling " Icon="00000000-0000-000e-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-000f-0d00000000000000" Title="Alarm " Icon="00000000-0000-000f-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0010-0d00000000000000" Title="Poort" Icon="00000000-0000-0010-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0011-0d00000000000000" Title="Wellness" Icon="00000000-0000-0011-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0012-0d00000000000000" Title="Technik" Icon="00000000-0000-0012-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0013-0d00000000000000" Title="Computer" Icon="00000000-0000-001e-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0014-0d00000000000000" Title="Toegang" Icon="00000000-0000-0020-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0015-0d00000000000000" Title="Verbruiker" Icon="00000000-0000-0022-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0016-0d00000000000000" Title="Irrigatie" Icon="00000000-0000-0024-2000000000000000"/>
+	<C Type="Category" V="70" U="0a33772e-00d3-0017-0d00000000000000" Title="Fotovoltaïek" Icon="00000000-0000-0026-2000000000000000"/>
+	<C Type="PlaceCaption" V="70" U="0a3375c5-02c9-11cd-ffff112233445566" Title="Ruimtes"/>
+	<C Type="IconCaptionPlace" V="70" U="0a3375c5-02c9-11cf-ffff112233445566" Title=" Symbolen"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0001-2100000000000000" Title="Niet toegewezen "/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0002-2100000000000000" Title="Zitplaats gelijk" Ix="1"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0003-2100000000000000" Title="Zitplaats verdiep" Ix="2"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0004-2100000000000000" Title="Woonkamer " Ix="3"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0005-2100000000000000" Title="Keuken " Ix="4"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0006-2100000000000000" Title="Badkamer gelijk" Ix="5"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0007-2100000000000000" Title="Badkamer verdiep" Ix="6"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0008-2100000000000000" Title="Slaapkamer" Ix="7"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0009-2100000000000000" Title="Kinderkamer" Ix="8"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000a-2100000000000000" Title="WC " Ix="9"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000b-2100000000000000" Title="Dressing" Ix="10"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000c-2100000000000000" Title="Garage " Ix="11"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000d-2100000000000000" Title="Veranda" Ix="12"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000e-2100000000000000" Title="Trap" Ix="13"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-000f-2100000000000000" Title="Sauna" Ix="14"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0010-2100000000000000" Title="Wintertuin" Ix="15"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0011-2100000000000000" Title="Bureau" Ix="16"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0012-2100000000000000" Title="Speelkamer" Ix="17"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0013-2100000000000000" Title="Wasplaats" Ix="18"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0014-2100000000000000" Title="Strijkkamer" Ix="19"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0015-2100000000000000" Title="Fitnes" Ix="20"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0016-2100000000000000" Title="Terras" Ix="21"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0017-2100000000000000" Title="Tuin " Ix="22"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0018-2100000000000000" Title="Eetkamer " Ix="23"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0019-2100000000000000" Title="Zolder" Ix="24"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001a-2100000000000000" Title="Voorraadkelder " Ix="25"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001b-2100000000000000" Title="Bar " Ix="26"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001c-2100000000000000" Title="Badkamer gelijk 2" Ix="27"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001d-2100000000000000" Title="Dressing 2" Ix="28"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001e-2100000000000000" Title="Badkamer gelijk 3" Ix="29"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-001f-2100000000000000" Title="Badkamer gelijk 4" Ix="30"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0020-2100000000000000" Title="Keuken 2" Ix="31"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0021-2100000000000000" Title="Keuken 3" Ix="32"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0022-2100000000000000" Title="Veranda 2" Ix="33"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0023-2100000000000000" Title="Sanitair" Ix="34"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0024-2100000000000000" Title="Bureau 2" Ix="35"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0025-2100000000000000" Title="Eetkamer 2" Ix="36"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0026-2100000000000000" Title="Conferentie" Ix="37"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0027-2100000000000000" Title="Garage 2" Ix="38"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0028-2100000000000000" Title="Wintertuin 2" Ix="39"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0029-2100000000000000" Title="Trap 2" Ix="40"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002a-2100000000000000" Title="Terras 2" Ix="41"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002b-2100000000000000" Title="Pool" Ix="42"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002c-2100000000000000" Title="Gang" Ix="43"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002d-2100000000000000" Title="Buiten" Ix="44"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002e-2100000000000000" Title="Werk kamer" Ix="45"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-002f-2100000000000000" Title="Bureau 3" Ix="46"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0030-2100000000000000" Title="Werk kamer 2" Ix="47"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0031-2100000000000000" Title="Centraal" Ix="48"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0032-2100000000000000" Title="Serverruimte" Ix="49"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0033-2100000000000000" Title="Ketel ruimte" Ix="50"/>
+	<C Type="IconPlace" V="70" U="00000000-0000-0034-2100000000000000" Title="WC 2" Ix="51"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0018-0f00000000000000" Title="Niet toegewezen " Icon="00000000-0000-0001-2100000000000000" First="true"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0019-0f00000000000000" Title="Zitplaats gelijk" Icon="00000000-0000-0002-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001a-0f00000000000000" Title="Zitplaats verdiep" Icon="00000000-0000-0003-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001b-0f00000000000000" Title="Woonkamer " Icon="00000000-0000-0004-2100000000000000" Rating="5"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001c-0f00000000000000" Title="Keuken " Icon="00000000-0000-0005-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001d-0f00000000000000" Title="Badkamer gelijk" Icon="00000000-0000-0006-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001e-0f00000000000000" Title="Badkamer verdiep" Icon="00000000-0000-0007-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-001f-0f00000000000000" Title="Slaapkamer" Icon="00000000-0000-0008-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0020-0f00000000000000" Title="Kinderkamer" Icon="00000000-0000-0009-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0021-0f00000000000000" Title="WC " Icon="00000000-0000-000a-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0022-0f00000000000000" Title="Dressing" Icon="00000000-0000-000b-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0023-0f00000000000000" Title="Garage " Icon="00000000-0000-000c-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0024-0f00000000000000" Title="Veranda" Icon="00000000-0000-000d-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0025-0f00000000000000" Title="Trap" Icon="00000000-0000-000e-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0026-0f00000000000000" Title="Sauna" Icon="00000000-0000-000f-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0027-0f00000000000000" Title="Wintertuin" Icon="00000000-0000-0010-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0028-0f00000000000000" Title="Bureau" Icon="00000000-0000-0011-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0029-0f00000000000000" Title="Speelkamer" Icon="00000000-0000-0012-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002a-0f00000000000000" Title="Wasplaats" Icon="00000000-0000-0013-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002b-0f00000000000000" Title="Strijkkamer" Icon="00000000-0000-0014-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002c-0f00000000000000" Title="Fitnes" Icon="00000000-0000-0015-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002d-0f00000000000000" Title="Terras" Icon="00000000-0000-0016-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002e-0f00000000000000" Title="Tuin " Icon="00000000-0000-0017-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-002f-0f00000000000000" Title="Eetkamer " Icon="00000000-0000-0018-2100000000000000" Rating="5"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0030-0f00000000000000" Title="Zolder" Icon="00000000-0000-0019-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0031-0f00000000000000" Title="Voorraadkelder " Icon="00000000-0000-001a-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0032-0f00000000000000" Title="Bar " Icon="00000000-0000-001b-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0033-0f00000000000000" Title="Sanitair" Icon="00000000-0000-0023-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0034-0f00000000000000" Title="Conferentie" Icon="00000000-0000-0026-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0035-0f00000000000000" Title="Pool" Icon="00000000-0000-002b-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0036-0f00000000000000" Title="Gang" Icon="00000000-0000-002c-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0037-0f00000000000000" Title="Buiten" Icon="00000000-0000-002d-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0038-0f00000000000000" Title="Werk kamer" Icon="00000000-0000-002e-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-0039-0f00000000000000" Title="Centraal" Icon="00000000-0000-0031-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-003a-0f00000000000000" Title="Serverruimte" Icon="00000000-0000-0032-2100000000000000"/>
+	<C Type="Place" V="70" U="0a33772e-00d3-003b-0f00000000000000" Title="Ketel ruimte" Icon="00000000-0000-0033-2100000000000000"/>
+	<C Type="UserCaption" V="70" U="0a3375c5-02c9-11d6-ffff112233445566" Title="Gebruiker"/>
+	<C Type="User" V="70" U="0a3375c5-03b9-12c4-ffff112233445566" Title="admin" Pwd="5BBF685E9359C4717344582369914980" Main="true"/>
+	<C Type="UserGroupCaption" V="70" U="0a3375c5-02c9-11d7-ffff112233445566" Title="Gebruikersgroep"/>
+	<C Type="UserGroup" V="70" U="0a3375c5-03b9-12c5-ffff112233445566" Title="Administrators" Rights="-1" UgType="1" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+		<Entry To="1440" V="1"/>
+		<Entry To="1440" Ix="1" V="1"/>
+		<Entry To="1440" Ix="2" V="1"/>
+		<Entry To="1440" Ix="3" V="1"/>
+		<Entry To="1440" Ix="4" V="1"/>
+		<Entry To="1440" Ix="5" V="1"/>
+		<Entry To="1440" Ix="6" V="1"/>
+		<Entry To="1440" Ix="7" V="1"/>
+		<Entry To="1440" Ix="8" V="1"/>
+		<Entry To="1440" Ix="9" V="1"/>
+	</C>
+	<C Type="RefUser" V="70" U="0a3375c5-03b9-12c7-ffff112233445566" Title="admin" Cl="0,0,0" Ref="0a3375c5-03b9-12c4-ffff112233445566"/>
+	<C Type="UserGroup" V="70" U="0a3375c5-03b9-12c8-ffff112233445566" Title="Gebruiker" Rights="1" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+		<Entry To="1440" V="1"/>
+		<Entry To="1440" Ix="1" V="1"/>
+		<Entry To="1440" Ix="2" V="1"/>
+		<Entry To="1440" Ix="3" V="1"/>
+		<Entry To="1440" Ix="4" V="1"/>
+		<Entry To="1440" Ix="5" V="1"/>
+		<Entry To="1440" Ix="6" V="1"/>
+		<Entry To="1440" Ix="7" V="1"/>
+		<Entry To="1440" Ix="8" V="1"/>
+		<Entry To="1440" Ix="9" V="1"/>
+	</C>
+	<C Type="UserGroup" V="70" U="0a3375c5-03b9-12c9-ffff112233445566" Title="Allemaal" Rights="1" UgType="2" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+		<Entry To="1440" V="1"/>
+		<Entry To="1440" Ix="1" V="1"/>
+		<Entry To="1440" Ix="2" V="1"/>
+		<Entry To="1440" Ix="3" V="1"/>
+		<Entry To="1440" Ix="4" V="1"/>
+		<Entry To="1440" Ix="5" V="1"/>
+		<Entry To="1440" Ix="6" V="1"/>
+		<Entry To="1440" Ix="7" V="1"/>
+		<Entry To="1440" Ix="8" V="1"/>
+		<Entry To="1440" Ix="9" V="1"/>
+	</C>
+	<C Type="RefUser" V="70" U="0a3375c5-03b9-12cb-ffff112233445566" Title="admin" Cl="0,0,0" Ref="0a3375c5-03b9-12c4-ffff112233445566"/>
+	<C Type="UserGroup" V="70" U="0a3375c5-03b9-12cc-ffff112233445566" Title="Niemand " UgType="3" N="10" Modes="00000000-0000-0001-1500000000000000,00000000-0000-0002-1500000000000000,00000000-0000-0003-1500000000000000,00000000-0000-0004-1500000000000000,00000000-0000-0005-1500000000000000,00000000-0000-0006-1500000000000000,00000000-0000-0007-1500000000000000,00000000-0000-0008-1500000000000000,00000000-0000-0009-1500000000000000,00000000-0000-000a-1500000000000000">
+		<Entry To="1440" V="1"/>
+		<Entry To="1440" Ix="1" V="1"/>
+		<Entry To="1440" Ix="2" V="1"/>
+		<Entry To="1440" Ix="3" V="1"/>
+		<Entry To="1440" Ix="4" V="1"/>
+		<Entry To="1440" Ix="5" V="1"/>
+		<Entry To="1440" Ix="6" V="1"/>
+		<Entry To="1440" Ix="7" V="1"/>
+		<Entry To="1440" Ix="8" V="1"/>
+		<Entry To="1440" Ix="9" V="1"/>
+	</C>
+	<C Type="ConstantCaption" V="70" U="0a3375c5-02c9-11d0-ffff112233445566" Title="Constanten"/>
+	<C Type="MemoryCaption" V="70" U="0a3375c5-02c9-11d1-ffff112233445566" Title="Marker"/>
+	<C Type="PlaceGroupCaption" V="70" U="0a3375c5-02c9-11d4-ffff112233445566" Title="Ruimtegroepen"/>
+	<C Type="ModeCaption" V="70" U="0a3375c5-02c9-11d5-ffff112233445566" Title="Bedrijfsmodes"/>
+	<C Type="Mode" V="70" U="00000000-0000-0001-1500000000000000" Title="Feestdag" Nio="2">
+		<Co K="I" U="0a3375c5-03af-1289-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03af-128a-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0002-1500000000000000" Title="Verlof" Nio="2" Mode="1">
+		<Co K="I" U="0a3375c5-03af-128c-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03af-128d-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0003-1500000000000000" Title="Vrije dag / Schoolverlof" Nio="2" Mode="2">
+		<Co K="I" U="0a3375c5-03af-128f-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03af-1290-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0004-1500000000000000" Title="Maandag" Nio="2" Mode="3">
+		<Co K="I" U="0a3375c5-03b9-1292-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-1293-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0005-1500000000000000" Title="Dinsdag" Nio="2" Mode="4">
+		<Co K="I" U="0a3375c5-03b9-1295-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-1296-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0006-1500000000000000" Title="Woensdag" Nio="2" Mode="5">
+		<Co K="I" U="0a3375c5-03b9-1298-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-1299-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0007-1500000000000000" Title="Donderdag" Nio="2" Mode="6">
+		<Co K="I" U="0a3375c5-03b9-129b-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-129c-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0008-1500000000000000" Title="Vrijdag" Nio="2" Mode="7">
+		<Co K="I" U="0a3375c5-03b9-129e-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-129f-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-0009-1500000000000000" Title="Zaterdag" Nio="2" Mode="8">
+		<Co K="I" U="0a3375c5-03b9-12a1-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12a2-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-000a-1500000000000000" Title="Zondag" Nio="2" Mode="9">
+		<Co K="I" U="0a3375c5-03b9-12a4-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12a5-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-000b-1500000000000000" Title="Verwarming periode" Nio="2" Mode="10">
+		<Co K="I" U="0a3375c5-03b9-12a7-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12a8-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="00000000-0000-000c-1500000000000000" Title="Koeling periode" Nio="2" Mode="11">
+		<Co K="I" U="0a3375c5-03b9-12aa-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12ab-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-003c-1500000000000000" Title="Alarm " Nio="2" Mode="-1">
+		<Co K="I" U="0a3375c5-03b9-12ad-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12ae-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-003d-1500000000000000" Title="Aanwezigheidssimulatie " Nio="2" Mode="-2">
+		<Co K="I" U="0a3375c5-03b9-12b0-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12b1-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-003e-1500000000000000" Title="Woning in diepe slaap" Nio="2" Mode="-3">
+		<Co K="I" U="0a3375c5-03b9-12b3-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12b4-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-003f-1500000000000000" Title="Verhoogde temperatuur" Nio="2" Mode="-4">
+		<Co K="I" U="0a3375c5-03b9-12b6-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12b7-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-0040-1500000000000000" Title="Verlaagde temperatuur" Nio="2" Mode="-5">
+		<Co K="I" U="0a3375c5-03b9-12b9-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12ba-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="Mode" V="70" U="0a33772e-00d3-0041-1500000000000000" Title="Allemaal afwezig" Nio="2" Mode="-6">
+		<Co K="I" U="0a3375c5-03b9-12bc-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12bd-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display></Display>
+	</C>
+	<C Type="CalendarCaption" V="70" U="0a3375c5-02c9-11d2-ffff112233445566" Title="Kalender"/>
+	<C Type="CalendarEntry" V="70" U="0a3375c5-03b9-12be-ffff112233445566" Title="Verwarming periode" Nio="2" CalType="10" Mode="4" Month="10" Day="1" Month2="4" Day2="30" WeekDayInMonth="1">
+		<Co K="I" U="0a3375c5-03b9-12bf-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12c0-ffff112233445566"/>
+	</C>
+	<C Type="CalendarEntry" V="70" U="0a3375c5-03b9-12c1-ffff112233445566" Title="Koeling periode" Nio="2" CalType="11" Mode="4" Month="5" Day="1" Month2="9" Day2="30" WeekDayInMonth="1">
+		<Co K="I" U="0a3375c5-03b9-12c2-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03b9-12c3-ffff112233445566"/>
+	</C>
+	<C Type="RemoteControls" V="70" U="0a3375c5-02c9-11d3-ffff112233445566" Title="Afstandsbedieningen"/>
+	<C Type="LoxLIVE" V="70" U="0a3375c5-03cd-13aa-ffff112233445566" Title="Loxone Miniserver" CycleUserProt="-1" Serial="504F94000000" Installation="" SwitchBoard="Verdeelbord" SwitchBoardRow="1" SwitchBoardPos="1" ExtAddr="dns.loxonecloud.com" IntAddr="" BaseID="-1"/>
+	<C Type="InputCaption" V="70" U="0a3375c5-03cd-13ab-ffff112233445566" Title="Digitale ingangen"/>
+	<C Type="DigitalIn" IName="I1" V="70" U="0a3375c5-03cd-13b8-ffff112233445566" Title="Ingang I1" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13b9-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I2" V="70" U="0a3375c5-03cd-13ba-ffff112233445566" Title="Ingang I2" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13bb-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I3" V="70" U="0a3375c5-03cd-13bc-ffff112233445566" Title="Ingang I3" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13bd-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I4" V="70" U="0a3375c5-03cd-13be-ffff112233445566" Title="Ingang I4" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13bf-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I5" V="70" U="0a3375c5-03cd-13c0-ffff112233445566" Title="Ingang I5" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13c1-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I6" V="70" U="0a3375c5-03cd-13c2-ffff112233445566" Title="Ingang I6" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13c3-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I7" V="70" U="0a3375c5-03cd-13c4-ffff112233445566" Title="Ingang I7" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13c5-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="DigitalIn" IName="I8" V="70" U="0a3375c5-03cd-13c6-ffff112233445566" Title="Ingang I8" Nio="1" MinTime="10">
+		<Co K="Q" U="0a3375c5-03cd-13c7-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="AnalogInputCaption" V="70" U="0a3375c5-03cd-13ac-ffff112233445566" Title="Analoge ingangen"/>
+	<C Type="VoltageIn" IName="AI1" V="70" U="0a3375c5-03cd-13c8-ffff112233445566" Title="Spanning AI1" Nio="2" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+		<Co K="AQ" U="0a3375c5-03cd-13c9-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03cd-13ca-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Type="2" Unit="&lt;v.1&gt;°" StateOnly="true"/>
+	</C>
+	<C Type="VoltageIn" IName="AI2" V="70" U="0a3375c5-03cd-13cb-ffff112233445566" Title="Spanning AI2" Nio="2" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+		<Co K="AQ" U="0a3375c5-03cd-13cc-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03cd-13cd-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Type="2" Unit="&lt;v.1&gt;°" StateOnly="true"/>
+	</C>
+	<C Type="VoltageIn" IName="AI3" V="70" U="0a3375c5-03cd-13ce-ffff112233445566" Title="Spanning AI3" Nio="2" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+		<Co K="AQ" U="0a3375c5-03cd-13cf-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03cd-13d0-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Type="2" Unit="&lt;v.1&gt;°" StateOnly="true"/>
+	</C>
+	<C Type="VoltageIn" IName="AI4" V="70" U="0a3375c5-03cd-13d1-ffff112233445566" Title="Spanning AI4" Nio="2" Analog="true" SourceValHigh="10" DestValHigh="10" MaxVal="10" MinChange="0.25" MinTime="1000" AverageTime="1">
+		<Co K="AQ" U="0a3375c5-03cd-13d2-ffff112233445566"/>
+		<Co K="Q" U="0a3375c5-03cd-13d3-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Type="2" Unit="&lt;v.1&gt;°" StateOnly="true"/>
+	</C>
+	<C Type="OutputCaption" V="70" U="0a3375c5-03cd-13ad-ffff112233445566" Title="Digitale uitgangen"/>
+	<C Type="Actor" IName="Q1" V="70" U="0a3375c5-03cd-13d4-ffff112233445566" Title="Actor (relais) Q1" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13d5-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q2" V="70" U="0a3375c5-03cd-13d6-ffff112233445566" Title="Actor (relais) Q2" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13d7-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q3" V="70" U="0a3375c5-03cd-13d8-ffff112233445566" Title="Actor (relais) Q3" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13d9-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q4" V="70" U="0a3375c5-03cd-13da-ffff112233445566" Title="Actor (relais) Q4" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13db-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q5" V="70" U="0a3375c5-03cd-13dc-ffff112233445566" Title="Actor (relais) Q5" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13dd-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q6" V="70" U="0a3375c5-03cd-13de-ffff112233445566" Title="Actor (relais) Q6" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13df-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q7" V="70" U="0a3375c5-03cd-13e0-ffff112233445566" Title="Actor (relais) Q7" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13e1-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="Actor" IName="Q8" V="70" U="0a3375c5-03cd-13e2-ffff112233445566" Title="Actor (relais) Q8" Nio="1">
+		<Co K="I" U="0a3375c5-03cd-13e3-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="AnalogOutputCaption" V="70" U="0a3375c5-03cd-13ae-ffff112233445566" Title="Analoge uitgangen"/>
+	<C Type="VoltageOut" IName="AQ1" V="70" U="0a3375c5-03cd-13e4-ffff112233445566" Title="Spanning AQ1" Nio="1" Channel="1" SourceValHigh="10" DestValHigh="10">
+		<Co K="I" U="0a3375c5-03cd-13e5-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="VoltageOut" IName="AQ2" V="70" U="0a3375c5-03cd-13e6-ffff112233445566" Title="Spanning AQ2" Nio="1" Channel="1" SourceValHigh="10" DestValHigh="10">
+		<Co K="I" U="0a3375c5-03cd-13e7-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="VoltageOut" IName="AQ3" V="70" U="0a3375c5-03cd-13e8-ffff112233445566" Title="Spanning AQ3" Nio="1" Channel="1" SourceValHigh="10" DestValHigh="10">
+		<Co K="I" U="0a3375c5-03cd-13e9-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="VoltageOut" IName="AQ4" V="70" U="0a3375c5-03cd-13ea-ffff112233445566" Title="Spanning AQ4" Nio="1" Channel="1" SourceValHigh="10" DestValHigh="10">
+		<Co K="I" U="0a3375c5-03cd-13eb-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V" StateOnly="true"/>
+	</C>
+	<C Type="EIBline" V="70" U="0a3375c5-03cd-13af-ffff112233445566" Title="KNX / EIB lijn" EibAddr="1.1.250 14/"/>
+	<C Type="EIBactorCaption" V="70" U="0a3375c5-03cd-13b1-ffff112233445566" Title="Actoren"/>
+	<C Type="EIBsensorCaption" V="70" U="0a3375c5-03cd-13b0-ffff112233445566" Title="Sensoren"/>
+	<C Type="VirtualInCaption" V="70" U="0a3375c5-03cd-13b2-ffff112233445566" Title="Virtuele ingangen"/>
+	<C Type="VirtualOutCaption" V="70" U="0a3375c5-03cd-13b3-ffff112233445566" Title="Virtuele uitgangen"/>
+	<C Type="WeatherCaption" V="70" U="0a3375c5-03cd-13b4-ffff112233445566" Title="Server communicatie"/>
+	<C Type="TimeCaption" V="70" U="0a3375c5-03cd-13b5-ffff112233445566" Title="Tijden" Cl="0,0,0"/>
+	<C Type="ImpulseEveningtwilight" V="70" U="0a3375c5-03d7-1426-ffff112233445566" Title="Puls schemering" Nio="1">
+		<Co K="Q" U="0a3375c5-03d7-1427-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseMorningtwilight" V="70" U="0a3375c5-03d7-1424-ffff112233445566" Title="Puls dageraad" Nio="1">
+		<Co K="Q" U="0a3375c5-03d7-1425-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseSunset" V="70" U="0a3375c5-03cd-1422-ffff112233445566" Title="Puls zonsondergang" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1423-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseSunrise" V="70" U="0a3375c5-03cd-1420-ffff112233445566" Title="Puls zonsopgang" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1421-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseSecond" V="70" U="0a3375c5-03cd-141e-ffff112233445566" Title="Puls seconden" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-141f-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseMinute" V="70" U="0a3375c5-03cd-141c-ffff112233445566" Title="Puls minuut" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-141d-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseHour" V="70" U="0a3375c5-03cd-141a-ffff112233445566" Title="Puls uur" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-141b-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseDay" V="70" U="0a3375c5-03cd-1418-ffff112233445566" Title="Puls dag" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1419-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseMonth" V="70" U="0a3375c5-03cd-1416-ffff112233445566" Title="Puls maand" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1417-ffff112233445566"/>
+	</C>
+	<C Type="ImpulseYear" V="70" U="0a3375c5-03cd-1414-ffff112233445566" Title="Puls jaar" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1415-ffff112233445566"/>
+	</C>
+	<C Type="StartPulse" V="70" U="0a3375c5-03cd-1412-ffff112233445566" Title="Start impuls" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1413-ffff112233445566"/>
+	</C>
+	<C Type="SunAzimuth" V="70" U="0a3375c5-03cd-1410-ffff112233445566" Title="Richting van de Zon" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1411-ffff112233445566"/>
+	</C>
+	<C Type="SunAltitude" V="70" U="0a3375c5-03cd-140e-ffff112233445566" Title="Hoogte van de Zon" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-140f-ffff112233445566"/>
+	</C>
+	<C Type="Eveningtwilight" V="70" U="0a3375c5-03cd-140c-ffff112233445566" Title="Minuten tot schemering" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-140d-ffff112233445566"/>
+	</C>
+	<C Type="Morningtwilight" V="70" U="0a3375c5-03cd-140a-ffff112233445566" Title="Minuten tot dageraad" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-140b-ffff112233445566"/>
+	</C>
+	<C Type="Daylight2" V="70" U="0a3375c5-03cd-1408-ffff112233445566" Title="Daglicht 30Min." Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1409-ffff112233445566"/>
+	</C>
+	<C Type="Daylight" V="70" U="0a3375c5-03cd-1406-ffff112233445566" Title="Daglicht" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1407-ffff112233445566"/>
+	</C>
+	<C Type="Sunset" V="70" U="0a3375c5-03cd-1404-ffff112233445566" Title="Minuten tot zonsondergang" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1405-ffff112233445566"/>
+	</C>
+	<C Type="Sunrise" V="70" U="0a3375c5-03cd-1402-ffff112233445566" Title="Minuten tot zonsopgang" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1403-ffff112233445566"/>
+	</C>
+	<C Type="SecondsBoot" V="70" U="0a3375c5-03cd-1400-ffff112233445566" Title="Seconden sinds opstart" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-1401-ffff112233445566"/>
+	</C>
+	<C Type="Second" V="70" U="0a3375c5-03cd-13fe-ffff112233445566" Title="Seconden" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13ff-ffff112233445566"/>
+	</C>
+	<C Type="Minute" V="70" U="0a3375c5-03cd-13fc-ffff112233445566" Title="Minuten" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13fd-ffff112233445566"/>
+	</C>
+	<C Type="Hour" V="70" U="0a3375c5-03cd-13fa-ffff112233445566" Title="Uur" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13fb-ffff112233445566"/>
+	</C>
+	<C Type="Time" V="70" U="0a3375c5-03cd-13f8-ffff112233445566" Title="Minuten van middernacht tot de gebeurtenis" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13f9-ffff112233445566"/>
+	</C>
+	<C Type="Calendar" V="70" U="0a3375c5-03cd-13f6-ffff112233445566" Title="Kalender Type" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13f7-ffff112233445566"/>
+	</C>
+	<C Type="DayOfWeek" V="70" U="0a3375c5-03cd-13f4-ffff112233445566" Title="Weekdag" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13f5-ffff112233445566"/>
+	</C>
+	<C Type="Day" V="70" U="0a3375c5-03cd-13f2-ffff112233445566" Title="Dag" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13f3-ffff112233445566"/>
+	</C>
+	<C Type="Month" V="70" U="0a3375c5-03cd-13f0-ffff112233445566" Title="Maand" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13f1-ffff112233445566"/>
+	</C>
+	<C Type="Year" V="70" U="0a3375c5-03cd-13ee-ffff112233445566" Title="Jaar" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13ef-ffff112233445566"/>
+	</C>
+	<C Type="Day2009" V="70" U="0a3375c5-03cd-13ec-ffff112233445566" Title="Dagen sinds 2009" Nio="1">
+		<Co K="Q" U="0a3375c5-03cd-13ed-ffff112233445566"/>
+	</C>
+	<C Type="LoggerOutCaption" V="70" U="0a3375c5-03cd-13b6-ffff112233445566" Title="Meldingen"/>
+	<C Type="Logger" V="70" U="0a3375c5-03cd-13b7-ffff112233445566" Title="Logger" Address=""/>
+	<C Type="Program" V="70" U="0a3375c5-03b9-12cd-ffff112233445566" Title="Programma"/>
+	<C Type="Page" V="70" U="0a3375c5-03b9-12ce-ffff112233445566" Title="Light - Living ">
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+	</C>
+	<C Type="LightController" V="70" U="0a3375d6-0094-15e0-ffff112233445566" Title="Lichtsturing" Px="7200" Py="6528" Px2="11424" Py2="11424" Cl="200,216,179" Nio="59" NameAI0="Milight Group 1" NameAI1="Milight - Group 2" NameAI2="Milight - Group 4" NameAI3="" NameAI4="" NameAI5="" NameAI6="" NameAI7="" NameAI8="" NameAI9="" NameAI10="" NameAI11="">
+		<Co K="I1" U="0a3375d6-0094-15a5-ffff112233445566"/>
+		<Co K="I2" U="0a3375d6-0094-15a6-ffff112233445566"/>
+		<Co K="I3" U="0a3375d6-0094-15a7-ffff112233445566"/>
+		<Co K="I4" U="0a3375d6-0094-15a8-ffff112233445566"/>
+		<Co K="I5" U="0a3375d6-0094-15a9-ffff112233445566"/>
+		<Co K="I6" U="0a3375d6-0094-15aa-ffff112233445566"/>
+		<Co K="I7" U="0a3375d6-0094-15ab-ffff112233445566"/>
+		<Co K="I8" U="0a3375d6-0094-15ac-ffff112233445566"/>
+		<Co K="I9" U="0a3375d6-0094-15ad-ffff112233445566"/>
+		<Co K="I10" U="0a3375d6-0094-15ae-ffff112233445566"/>
+		<Co K="I11" U="0a3375d6-0094-15af-ffff112233445566"/>
+		<Co K="I12" U="0a3375d6-0094-15b0-ffff112233445566"/>
+		<Co K="InputTriggerUp" U="0a3375d6-0094-15b1-ffff112233445566"/>
+		<Co K="InputTriggerDown" U="0a3375d6-0094-15b2-ffff112233445566"/>
+		<Co K="Select" U="0a3375d6-0094-15b3-ffff112233445566"/>
+		<Co K="Reset" U="0a3375d6-0094-15b4-ffff112233445566"/>
+		<Co K="Sel1" U="0a3375d6-0094-15b5-ffff112233445566"/>
+		<Co K="Sel2" U="0a3375d6-0094-15b6-ffff112233445566"/>
+		<Co K="Sel3" U="0a3375d6-0094-15b7-ffff112233445566"/>
+		<Co K="Sel4" U="0a3375d6-0094-15b8-ffff112233445566"/>
+		<Co K="Sel5" U="0a3375d6-0094-15b9-ffff112233445566"/>
+		<Co K="Sel6" U="0a3375d6-0094-15ba-ffff112233445566"/>
+		<Co K="Sel7" U="0a3375d6-0094-15bb-ffff112233445566"/>
+		<Co K="Sel8" U="0a3375d6-0094-15bc-ffff112233445566"/>
+		<Co K="EnMove" U="0a3375d6-0094-15bd-ffff112233445566"/>
+		<Co K="Move" U="0a3375d6-0094-15be-ffff112233445566"/>
+		<Co K="On" U="0a3375d6-0094-15bf-ffff112233445566"/>
+		<Co K="Gesture" U="0a3375d6-0094-15c0-ffff112233445566"/>
+		<Co K="Alarm" U="0a3375d6-0094-15c1-ffff112233445566"/>
+		<Co K="InputDisable" U="0a3375d6-0094-15c2-ffff112233445566"/>
+		<Co K="Remanence" U="0a3375d6-0094-15c3-ffff112233445566"/>
+		<Co K="MaxP" Def="0.35" U="0a3375d6-0094-15c4-ffff112233445566"/>
+		<Co K="Step" Def="2" U="0a3375d6-0094-15c5-ffff112233445566"/>
+		<Co K="Steptime" Def="0.2" U="0a3375d6-0094-15c6-ffff112233445566"/>
+		<Co K="Min" U="0a3375d6-0094-15c7-ffff112233445566"/>
+		<Co K="Max" Def="100" U="0a3375d6-0094-15c8-ffff112233445566"/>
+		<Co K="Wrap" U="0a3375d6-0094-15c9-ffff112233445566"/>
+		<Co K="NoLast" U="0a3375d6-0094-15ca-ffff112233445566"/>
+		<Co K="MoveOn" Def="180" U="0a3375d6-0094-15cb-ffff112233445566"/>
+		<Co K="Learntime" Def="5" U="0a3375d6-0094-15cc-ffff112233445566"/>
+		<Co K="MoveScene" U="0a3375d6-0094-15cd-ffff112233445566"/>
+		<Co K="MoveTimeout" U="0a3375d6-0094-15ce-ffff112233445566"/>
+		<Co K="RGBalt" U="0a3375d6-0094-15cf-ffff112233445566"/>
+		<Co K="AlarmPeriod" Def="1.5" U="0a3375d6-0094-15d0-ffff112233445566"/>
+		<Co K="AQ1" U="0a3375d6-0094-15d1-ffff112233445566"/>
+		<Co K="AQ2" U="0a3375d6-0094-15d2-ffff112233445566"/>
+		<Co K="AQ3" U="0a3375d6-0094-15d3-ffff112233445566"/>
+		<Co K="AQ4" U="0a3375d6-0094-15d4-ffff112233445566"/>
+		<Co K="AQ5" U="0a3375d6-0094-15d5-ffff112233445566"/>
+		<Co K="AQ6" U="0a3375d6-0094-15d6-ffff112233445566"/>
+		<Co K="AQ7" U="0a3375d6-0094-15d7-ffff112233445566"/>
+		<Co K="AQ8" U="0a3375d6-0094-15d8-ffff112233445566"/>
+		<Co K="AQ9" U="0a3375d6-0094-15d9-ffff112233445566"/>
+		<Co K="AQ10" U="0a3375d6-0094-15da-ffff112233445566"/>
+		<Co K="AQ11" U="0a3375d6-0094-15db-ffff112233445566"/>
+		<Co K="AQ12" U="0a3375d6-0094-15dc-ffff112233445566"/>
+		<Co K="Scene" U="0a3375d6-0094-15dd-ffff112233445566"/>
+		<Co K="OutputReset" U="0a3375d6-0094-15de-ffff112233445566"/>
+		<Co K="OutputResetAll" U="0a3375d6-0094-15df-ffff112233445566"/>
+		<IoData Visu="true" Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<LightscenesC Outputs="12" Num="8">
+			<LightsceneC Name="sfeer 1" UUID="0a3375d6-0094-1596-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="sfeer 2" UUID="0a3375d6-0094-1598-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="sfeer 3" UUID="0a3375d6-0094-159a-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="Beweging" UUID="0a3375d6-0094-159c-ffff112233445566" Move="true" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="-" UUID="0a3375d6-0094-159e-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="-" UUID="0a3375d6-0094-15a0-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="-" UUID="0a3375d6-0094-15a2-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+			<LightsceneC Name="-" UUID="0a3375d6-0094-15a4-ffff112233445566" Outputs="12" Q1="1073741824" Q2="1073741824" Q3="0" Q4="0" Q5="0" Q6="0" Q7="0" Q8="0" Q9="0" Q10="0" Q11="0" Q12="0"/>
+		</LightscenesC>
+	</C>
+	<C Type="Memory" V="70" U="0a3375f8-03bd-19c8-ffff112233445566" Title="Milight - Group 1" Px="12960" Py="6336" Px2="14880" Py2="14880" Cl="200,200,236" Nio="2" Analog="true">
+		<Co K="Input" Nc="1" U="0a3375f8-03bd-19c6-ffff112233445566">
+			<In Input="0a3375d6-0094-15d1-ffff112233445566"/>
+		</Co>
+		<Co K="AQ" U="0a3375f8-03bd-19c7-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V"/>
+	</C>
+	<C Type="Memory" V="70" U="0a337610-008c-2263-ffff504f94000000" Title="Milight - Group 2" Px="12960" Py="6912" Px2="14880" Py2="14880" Cl="200,200,236" Nio="2" Analog="true">
+		<Co K="Input" Nc="1" U="0a337610-008c-2264-ffff504f94000000">
+			<In Input="0a3375d6-0094-15d2-ffff112233445566"/>
+		</Co>
+		<Co K="AQ" U="0a337610-008c-2265-ffff504f94000000"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V"/>
+	</C>
+	<C Type="Memory" V="70" U="0a3376fa-01f1-59f2-ffff504f94000000" Title="Milight - Group 4" Px="12960" Py="7584" Px2="14880" Py2="14880" Cl="200,200,236" Nio="2" Analog="true">
+		<Co K="Input" Nc="1" U="0a3376fa-01f1-59f3-ffff504f94000000">
+			<In Input="0a3375d6-0094-15d3-ffff112233445566"/>
+		</Co>
+		<Co K="AQ" U="0a3376fa-01f1-59f4-ffff504f94000000"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V"/>
+	</C>
+	<C Type="Page" V="70" U="0a337646-01b7-29eb-ffff112233445566" Title="Light - Kitchen">
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+	</C>
+	<C Type="LightsceneRGB" V="70" U="0a337657-0201-2c7f-ffff112233445566" Title="RGB-Lichtsfeer" Px="9408" Py="7488" Px2="11136" Py2="11136" Cl="200,216,179" Nio="13">
+		<Co K="AI" U="0a337657-0201-2c72-ffff112233445566"/>
+		<Co K="InputTriggerUp" U="0a337657-0201-2c73-ffff112233445566"/>
+		<Co K="InputTriggerDown" U="0a337657-0201-2c74-ffff112233445566"/>
+		<Co K="Select" U="0a337657-0201-2c75-ffff112233445566"/>
+		<Co K="InputDisable" U="0a337657-0201-2c76-ffff112233445566"/>
+		<Co K="Reset" U="0a337657-0201-2c77-ffff112233445566"/>
+		<Co K="On" U="0a337657-0201-2c78-ffff112233445566"/>
+		<Co K="Remanence" U="0a337657-0201-2c79-ffff112233445566"/>
+		<Co K="AQr" U="0a337657-0201-2c7a-ffff112233445566"/>
+		<Co K="AQg" U="0a337657-0201-2c7b-ffff112233445566"/>
+		<Co K="AQb" U="0a337657-0201-2c7c-ffff112233445566"/>
+		<Co K="Scene" U="0a337657-0201-2c7d-ffff112233445566"/>
+		<Co K="AQa" U="0a337657-0201-2c7e-ffff112233445566"/>
+		<IoData Visu="true" Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Lightscenes></Lightscenes>
+	</C>
+	<C Type="Memory" V="70" U="0a337659-0205-2dc3-ffff112233445566" Title="Milight - Group 3" Px="12480" Py="8256" Px2="14400" Py2="14400" Cl="200,200,236" Nio="2" Analog="true">
+		<Co K="Input" Nc="1" U="0a337659-0205-2dc1-ffff112233445566">
+			<In Input="0a337657-0201-2c7e-ffff112233445566"/>
+		</Co>
+		<Co K="AQ" U="0a337659-0205-2dc2-ffff112233445566"/>
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+		<Display Unit="&lt;v.1&gt;V"/>
+	</C>
+	<C Type="Page" V="70" U="0a33766a-0245-317c-ffff112233445566" Title="AppLamp controller">
+		<IoData Cr="0a33772e-00d3-0001-0d00000000000000" Pr="0a33772e-00d3-0018-0f00000000000000" Ugr="0a3375c5-03b9-12c9-ffff112233445566" Ugx="0a3375c5-03b9-12c9-ffff112233445566"/>
+	</C>
+	<C Type="InputRef" V="70" U="0a3376ad-01be-37ef-ffff112233445566" Title="Milight - Group 3" Px="7872" Py="8064" Px2="10560" Py2="10560" Cl="200,200,236" Nio="4" Ref="0a337659-0205-2dc3-ffff112233445566" Analog="true">
+		<Co K="AI" Nc="1" U="0a3376ad-01be-37eb-ffff112233445566">
+			<In Input="0a337659-0205-2dc2-ffff112233445566"/>
+		</Co>
+		<Co K="I" U="0a3376ad-01be-37ec-ffff112233445566"/>
+		<Co K="AQ" U="0a3376ad-01be-37ed-ffff112233445566"/>
+		<Co K="Q" U="0a3376ad-01be-37ee-ffff112233445566"/>
+	</C>
+	<C Type="InputRef" V="70" U="0a3376ad-01fa-3935-ffff112233445566" Title="Milight - Group 1" Px="7872" Py="7680" Px2="10560" Py2="10560" Cl="200,200,236" Nio="4" Ref="0a3375f8-03bd-19c8-ffff112233445566" Analog="true">
+		<Co K="AI" Nc="1" U="0a3376ad-01fa-3931-ffff112233445566">
+			<In Input="0a3375f8-03bd-19c7-ffff112233445566"/>
+		</Co>
+		<Co K="I" U="0a3376ad-01fa-3932-ffff112233445566"/>
+		<Co K="AQ" U="0a3376ad-01fa-3933-ffff112233445566"/>
+		<Co K="Q" U="0a3376ad-01fa-3934-ffff112233445566"/>
+	</C>
+	<C Type="InputRef" V="70" U="0a3376ad-029a-3a7c-ffff112233445566" Title="Milight - Group 2" Px="7872" Py="7872" Px2="10560" Py2="10560" Cl="200,200,236" Nio="4" Ref="0a337610-008c-2263-ffff504f94000000" Analog="true">
+		<Co K="AI" Nc="1" U="0a3376ad-029a-3a78-ffff112233445566">
+			<In Input="0a337610-008c-2265-ffff504f94000000"/>
+		</Co>
+		<Co K="I" U="0a3376ad-029a-3a79-ffff112233445566"/>
+		<Co K="AQ" U="0a3376ad-029a-3a7a-ffff112233445566"/>
+		<Co K="Q" U="0a3376ad-029a-3a7b-ffff112233445566"/>
+	</C>
+	<C Type="InputRef" V="70" U="0a337712-0083-6077-ffff112233445566" Title="Milight - Group 4" Px="7872" Py="8256" Px2="10560" Py2="10560" Cl="200,200,236" Nio="4" Ref="0a3376fa-01f1-59f2-ffff504f94000000" Analog="true">
+		<Co K="AI" Nc="1" U="0a337712-0083-6073-ffff112233445566">
+			<In Input="0a3376fa-01f1-59f4-ffff504f94000000"/>
+		</Co>
+		<Co K="I" U="0a337712-0083-6074-ffff112233445566"/>
+		<Co K="AQ" U="0a337712-0083-6075-ffff112233445566"/>
+		<Co K="Q" U="0a337712-0083-6076-ffff112233445566"/>
+	</C>
+	<C Type="Code8" V="70" U="0a337692-0008-3420-ffff112233445566" Title="Wireless LED Controller" Px="11712" Py="6912" Px2="14208" Py2="14208" Cl="200,200,236" Nio="18" Code="int nEvents;
+int n;
+
+
+// Send UDP packet to wifi box,
+// This function expect a code and a parameter
+// The function tells the box what to do (Change color, on, off ...)
+// The param tells gives the function some params
+int SendUDP(int function, int param) {
+
+  int i = 0;
+  // Send every UDP command 3 times with an interval of 100ms
+  // This way we are sure that the command reaches the wifi box
+  do  {
+    STREAM* Socket = stream_create(&quot;/dev/udp/IP-ADDRESS/8899/&quot;,0,0);
+    if (Socket == NULL) {
+      printf(&quot;Creating UDP socket failed&quot;);
+      stream_close(Socket);
+    }
+
+    // Build the binary string to send
+    char command[3]={function, param, 0x55 };
+
+    stream_write(Socket,command,sizeof(command));
+    stream_flush(Socket); stream_close(Socket);
+    i = i + 1;
+    sleep(100);
+  } while (i &lt; 3);
+  return 1;
+}
+
+// Gets called with the group ID
+// This function will parse the RGB values received from the input
+// Using the RGB values we convert them to Hue and Brightness, saturation is not needed
+// Since our MiLight LEDS only accept a hue value and a brightness
+int SetGroup(int group, float f1) {
+  char buffer[4];
+  char sR[4];
+  char sG[4];
+  char sB[4];
+  float red;
+  float green;
+  float blue;
+  float bri;
+  float r,g,b;
+  float X, Y, Z, cx, cy;
+  char input_color[10];
+  float hue;
+  float sat;
+  float milightColorNo;
+
+  sprintf(input_color, &quot;%d&quot;, (int)f1);
+  //printf(&quot;input: %d \n&quot;,(int)f1);
+
+  // The following code parses the RGB color 
+  if (strlen(input_color) == 9) {
+    sB[0] = input_color[0]; sB[1] = input_color[1]; sB[2] = input_color[2]; sB[3] = &apos;\0&apos;;
+    sG[0] = input_color[3]; sG[1] = input_color[4]; sG[2] = input_color[5]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[6]; sR[1] = input_color[7]; sR[2] = input_color[8]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 8) {
+    sB[0] = &apos;0&apos;; sB[1] = input_color[0]; sB[2] = input_color[1]; sB[3] = &apos;\0&apos;;
+    sG[0] = input_color[2]; sG[1] = input_color[3]; sG[2] = input_color[4]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[5]; sR[1] = input_color[6]; sR[2] = input_color[7]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 7) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = input_color[0]; sB[3] = &apos;\0&apos;;
+    sG[0] = input_color[1]; sG[1] = input_color[2]; sG[2] = input_color[3]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[4]; sR[1] = input_color[5]; sR[2] = input_color[6]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 6) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = input_color[0]; sG[1] = input_color[1]; sG[2] = input_color[2]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[3]; sR[1] = input_color[4]; sR[2] = input_color[5]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 5) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = &apos;0&apos;; sG[1] = input_color[0]; sG[2] = input_color[1]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[2]; sR[1] = input_color[3]; sR[2] = input_color[4]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 4) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = &apos;0&apos;; sG[1] = &apos;0&apos;; sG[2] = input_color[0]; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[1]; sR[1] = input_color[2]; sR[2] = input_color[3]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 3) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = &apos;0&apos;; sG[1] = &apos;0&apos;; sG[2] = &apos;0&apos;; sG[3] = &apos;\0&apos;;
+    sR[0] = input_color[0]; sR[1] = input_color[1]; sR[2] = input_color[2]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 2) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = &apos;0&apos;; sG[1] = &apos;0&apos;; sG[2] = &apos;0&apos;; sG[3] = &apos;\0&apos;;
+    sR[0] = &apos;0&apos;; sR[1] = input_color[0]; sR[2] = input_color[1]; sR[3] = &apos;\0&apos;;
+  }
+  else if (strlen(input_color) == 1) {
+    sB[0] = &apos;0&apos;; sB[1] = &apos;0&apos;; sB[2] = &apos;0&apos;; sB[3] = &apos;\0&apos;;
+    sG[0] = &apos;0&apos;; sG[1] = &apos;0&apos;; sG[2] = &apos;0&apos;; sG[3] = &apos;\0&apos;;
+    sR[0] = &apos;0&apos;; sR[1] = &apos;0&apos;; sR[2] = input_color[0]; sR[3] = &apos;\0&apos;;
+  }
+
+  // Convert the strings back to int
+  red = atoi(sR);
+  green = atoi(sG);
+  blue = atoi(sB);
+  printf(&quot;red: %d \n&quot;,red);
+  printf(&quot;green: %d \n&quot;,green);
+  printf(&quot;blue: %d \n&quot;,blue);
+
+
+   // Clear older hue and sat values
+   hue = 0;
+   sat = 0;
+
+  // Convert based on RGB levels to HUE and Saturation
+  if ((red &gt;= green) &amp;&amp; (green &gt;= blue)) {
+    hue = 60*(green-blue)/(red-blue);
+    sat = (red - blue) / red;
+  } else if ((green &gt; red) &amp;&amp; (red &gt;= blue)) {
+    hue = 60*(2 - (red-blue)/(green-blue));
+    sat = (green - blue) / green;
+  } else if ((green &gt;= blue) &amp;&amp; (blue &gt; red)) {
+    hue = 60*(2 + (blue-red)/(green-red));
+    sat = (green - red) / green;
+  } else if ((blue &gt; green) &amp;&amp; (green &gt; red)) {
+    hue = 60*(4 - (green-red)/(blue-red));
+    sat = (blue - red) / blue;
+  } else if ((blue &gt; red) &amp;&amp; (red &gt;= green)) {
+    hue = 60*(4 + (red-green)/(blue-green));
+    sat = (blue - green) / blue;
+  } else if ((red &gt;= blue) &amp;&amp; (blue &gt; green)) {
+    hue = 60*(6 - (blue-green)/(red-green));
+    sat = (red - green) / red;
+  }
+
+  sat = sat * 255;
+
+
+  // set for safety again saturated at white
+  if (blue == 0 &amp;&amp; green == 0 &amp;&amp; red == 0) {
+    sat = 0;
+  }
+
+  // First map the 360 degrees value to a value of 0-255
+  milightColorNo =(176-(hue/360.0*255.0));
+  if ( milightColorNo &lt; 0 ) {
+    milightColorNo = 256+ milightColorNo;
+  }
+
+  // Convert the saturation to the brightness
+  bri = sqrt(pow(red, 2) + pow(green, 2) + pow(blue, 2));
+  bri = bri * 2;
+  if (bri &gt; 255) {
+    bri = 255;
+  }
+  // Falls nur 1 Farbe ein Thema, Helligkeit=Farbe
+  if (red == 0 &amp;&amp; green == 0) {
+    bri = (blue * 255)/100;
+  }
+
+  if (blue == 0 &amp;&amp; green == 0)
+    bri = (red * 255)/100;
+
+  if (red == 0 &amp;&amp; blue == 0)
+    bri = (green * 255)/100;
+
+
+  // Milight only supports brightness levels from 2-27, so scale 0-255 to 0-27
+  bri=bri/255.0*27.0;
+  if ( bri &lt; 3) {
+    bri=2;
+  }
+
+  // If all colors are the same level we get white, so set de RGB strip into white mode
+  if (red &gt; 0 || green &gt; 0 || blue &gt; 0 ) {
+    if (red == green &amp;&amp; green == blue &amp;&amp; blue == red ) {
+      if (group == 1) {
+        // Set white mode for group 1
+        SendUDP( 0xC5, 0x00 );
+      }
+      if (group == 2) {
+        // Set white mode for group 2
+        SendUDP( 0xC7, 0x00 );
+      }
+      if (group == 3) {
+        // Set white mode for group 3
+        SendUDP( 0xC9, 0x00 );
+      }
+      if (group == 4) {
+        // Set white mode for group 4
+        SendUDP( 0xCB, 0x00 );
+      }
+
+      // Set brightness (Will be executed only for the group selected above)
+      SendUDP( 0x4E, (int) bri );
+
+      } else {
+        if (group == 1) {
+          // Group 1 on and if already on, select it
+          SendUDP( 0x45, 0x00 );
+        }
+        if (group == 2) {
+          // Group 2 on and if already on, select it
+          SendUDP( 0x47, 0x00 );
+        }
+        if (group == 3) {
+          // Group 3 on and if already on, select it
+          SendUDP( 0x49, 0x00 );
+        }
+        if (group == 4) {
+          // Group 4 on and if already on, select it
+          SendUDP( 0x4B, 0x00 );
+        }
+        // Set hue color (Will be executed only for the group selected above)
+        SendUDP( 0x40, milightColorNo );
+        // Set brightness (Will be executed only for the group selected above)
+        SendUDP( 0x4E, (int) bri );
+      }
+    } else {
+      if (group == 1) {
+        // Set group 1 off
+        SendUDP( 0x46, 0x00 );
+      }
+      if (group == 2) {
+        // Set group 2 off
+        SendUDP( 0x48, 0x00 );
+      }
+      if (group == 3) {
+        // Set group 3 off
+        SendUDP( 0x4A, 0x00 );
+      }
+      if (group == 4) {
+        // Set group 4 off
+        SendUDP( 0x4C, 0x00 );
+      }
+    }
+    return 1;
+}
+
+
+// Main Loop
+while (1==1) {
+
+  nEvents = getinputevent();
+
+  // Test bitwise if input 3 was changed (00000100)
+  if (nEvents &amp; 0x04) {
+    SetGroup(1, getinput(0));
+  }
+  // Test bitwise if input 4 is changed (00001000)
+  if (nEvents &amp; 0x08) {
+    SetGroup(2, getinput(1));
+  }
+  // Test bitwise if input 5 is changed (00010000)
+  if (nEvents &amp; 0x10) {
+    SetGroup(3, getinput(2));
+  }
+  // Test bitwise if input 6 is changed (00100000)
+  if (nEvents &amp; 0x20) {
+    SetGroup(4, getinput(3));
+  }
+
+  sleep(500);
+}
+
+" Task="1">
+		<Co K="TI1" U="0a337692-0008-340e-ffff112233445566"/>
+		<Co K="TI2" U="0a337692-0008-340f-ffff112233445566"/>
+		<Co K="AI1" Nc="1" U="0a337692-0008-3410-ffff112233445566">
+			<In Input="0a3376ad-01fa-3934-ffff112233445566"/>
+		</Co>
+		<Co K="AI2" Nc="1" U="0a337692-0008-3411-ffff112233445566">
+			<In Input="0a3376ad-029a-3a7a-ffff112233445566"/>
+		</Co>
+		<Co K="AI3" Nc="1" U="0a337692-0008-3412-ffff112233445566">
+			<In Input="0a3376ad-01be-37ed-ffff112233445566"/>
+		</Co>
+		<Co K="AI4" Nc="1" U="0a337692-0008-3413-ffff112233445566">
+			<In Input="0a337712-0083-6075-ffff112233445566"/>
+		</Co>
+		<Co K="AI5" U="0a337692-0008-3414-ffff112233445566"/>
+		<Co K="AI6" U="0a337692-0008-3415-ffff112233445566"/>
+		<Co K="Remanence" U="0a337692-0008-3416-ffff112233445566"/>
+		<Co K="TQ1" U="0a337692-0008-3417-ffff112233445566"/>
+		<Co K="TQ2" U="0a337692-0008-3418-ffff112233445566"/>
+		<Co K="AQ1" U="0a337692-0008-3419-ffff112233445566"/>
+		<Co K="AQ2" U="0a337692-0008-341a-ffff112233445566"/>
+		<Co K="AQ3" U="0a337692-0008-341b-ffff112233445566"/>
+		<Co K="AQ4" U="0a337692-0008-341c-ffff112233445566"/>
+		<Co K="AQ5" U="0a337692-0008-341d-ffff112233445566"/>
+		<Co K="AQ6" U="0a337692-0008-341e-ffff112233445566"/>
+		<Co K="TeQ" U="0a337692-0008-341f-ffff112233445566"/>
+	</C>
+</ControlList>
