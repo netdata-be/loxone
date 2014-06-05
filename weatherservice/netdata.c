@@ -1,12 +1,11 @@
-#define MAX_BUFF 80000
+#define MAX_BUFF 80001
 #define MAX_FIELDS 20
 #define RD_BLOCK_SIZE 128
 #define DEBUG_LEVEL 1  // 0 = disable ; 1 = INFO ; 2 = DEBUG
 
 char buffer[MAX_BUFF];
 
-// Helper methods
-static char* downloadData()
+int downloadData()
 {
   char device[255];
   sprintf(device, "/dev/tcp/%s/80", "netdata.be");
@@ -25,10 +24,13 @@ static char* downloadData()
     count = stream_read(tcpStream, block, RD_BLOCK_SIZE, 4000);
     if (count > 0) strncpy((char*)buffer + i * RD_BLOCK_SIZE, block, count);
     i++;
+    if (i >= ( ( MAX_BUFF - 1 ) / RD_BLOCK_SIZE )) count=0; // avoid buffer overflows
+
   }
   while (count > 0);
   stream_close(tcpStream);
-  return (char*)buffer;
+  buffer[MAX_BUFF] = 0; //put null character or end of string at the end.
+  return 0;
 }
 
 char *fieldStart[MAX_FIELDS];
@@ -76,28 +78,37 @@ static void parseWeatherData(char **fields, int count) {
   if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting forecast for +%s hour ,received %d elements\n", fieldStart[0], count);
   int i = 0;
   if (count == 15) {
-    int timestamp = atoi(fields[1]);
     int offset = atoi(fields[0]);
-    // 
-    //  0 = offset
-    //  1 = epoch
-    //  2 = temp_c              => 1 
-    //  3 = relative_humidity   => 3
-    //  4 = wind_dir
-    //  5 = wind_degrees        => 5
-    //  6 = wind_kph            => 4
-    //  7 = wind_gust_kph       => 6
-    //  8 = pressure_mb         => 11
-    //  9 = dewpoint_c          => 2
-    // 10 = windchill_c        
-    // 11 = feelslike_c         => 26
-    // 12 = solarradiation      => 27 , 7
-    // 13 = precip_today_metric => 9
-    // 14 = weathercode         => 10
-    
+    if ( offset == 0 ) {
+      int timestamp = getcurrenttime();
+      int timestamp_real = atoi(fields[1]);
+      setweatherdata(22, timestamp, timestamp);
+      setweatherdata(23, timestamp, timestamp_real);
+    } else {
+      int timestamp = atoi(fields[1]);
+    }
+    // FIELD | NAME                | WeatherID |
+    // ------+---------------------+-----------+
+    //  0    | offset              |           |
+    //  1    | epoch               |           |
+    //  2    | temp_c              | 1         |
+    //  3    | relative_humidity   | 3         |
+    //  4    | wind_dir            |           |
+    //  5    | wind_degrees        | 5         |
+    //  6    | wind_kph            | 4         |
+    //  7    | wind_gust_kph       | 6         |
+    //  8    | pressure_mb         | 11        |
+    //  9    | dewpoint_c          | 2         |
+    // 10    | windchill_c         |           |
+    // 11    | feelslike_c         | 26        |
+    // 12    | solarradiation      | 27 , 7    |
+    // 13    | precip_today_metric | 9         |
+    // 14    | weathercode         | 10        |
+    // ------+---------------------+-----------+
+
     if (*fields[2] != '\0') {
       setweatherdata(1,  timestamp, atof(fields[2]) );
-          sprintf(setioVarName, "outsideTemp_offset_hour_%d", offset);
+      sprintf(setioVarName, "outsideTemp_offset_hour_%d", offset);
       setio(setioVarName, atof(fields[2]));
     }
     if (*fields[3] != '\0') {
@@ -123,7 +134,10 @@ static void parseWeatherData(char **fields, int count) {
     }
     if (*fields[12] != '\0') {
       setweatherdata(7,  timestamp, atof(fields[12]) );
-        setweatherdata(27,  timestamp, atof(fields[12]) );
+      setweatherdata(27,  timestamp, atof(fields[12]) );
+      sprintf(setioVarName, "solar_radiation_offset_hour_%d", offset);
+      setio(setioVarName, atof(fields[12]));
+
     }
     if (*fields[13] != '\0') {
       setweatherdata(9,  timestamp, atof(fields[13]) );
@@ -131,27 +145,35 @@ static void parseWeatherData(char **fields, int count) {
     if (*fields[14] != '\0') {
       setweatherdata(10,  timestamp, atof(fields[14]) );
     }
-
+  } else {
+    printf("Only received %d items", count);
   }
-
 }
+
+setio("weather_status", 2);
 
 // Main loop
 while(TRUE)
 {
-  char* http_response = downloadData();
-  char* csv_data = strstrskip(http_response,"\r\n\r\n");
+  setio("weather_status", 1);
+  downloadData();
+  printf("weatherservice [INFO]: xml data length: %d", strlen(buffer));
+  char* csv_data = strstrskip(buffer,"\r\n\r\n");
 
   char *start = &csv_data[0];
   int elems = 0;
   while ((elems = parseLine(&start)) > 0) {
     parseWeatherData(&fieldStart[0], elems);
     if (start == NULL) {
-      return 0;
+      printf("weatherservice [ERR]: WAAH, Could not loop over elements => skipping this run.\n");
+      break;
     }
   }
   if (elems < 0) {
     printf("weatherservice [ERR]: WAAH, error while parsing line.\n");
   }
-  sleeps(300);
+  setio("weather_status", 0);
+  sleeps(200);
 }
+
+
