@@ -15,11 +15,11 @@
 
 #define BUFF_SIZE 80000
 #define RD_BLOCK_SIZE 128
-#define REFRESH_MIN 15 // refresh elke 15 minuten (developer account kan 500 calls per dag doen; =20 calls per uur)
+#define REFRESH_MIN 15 // refresh every 15 minutes (developer account 500 calls/day -->max 20 calls per hour)
 #define DEBUG_LEVEL 0  // 0 = disable ; 1 = INFO ; 2 = DEBUG
 
 // Settings
-// create yourself a (free) developer account on wunderground website; it can handdle up to 500 calls/day for free.
+// create yourself a (free) developer account on wunderground website; it can handle up to 500 calls/day for free.
 char* apiKey   = "YOUR-API-KEY";         // your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
 char* location = "YOUR-LOCATION";        // your location
 char* host     = "api.wunderground.com"; // The API URL in orde to get this working you need to use a DNS server
@@ -157,6 +157,8 @@ void parseHourly(int hour_offset)
   if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
   if (moveToKey("<feelslike>")) setweatherdata(26, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<mslp>")) setweatherdata(11, timestamp, readIntValue("<metric>"));
+  // clear precip due to lack of data in forecasts
+  setweatherdata(9, timestamp, 0.0);
   free(temperature_var);
 }
 
@@ -167,22 +169,24 @@ void parseWeather()
   {
     if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting current weather");
     printf("weatherservice [INFO]: Wunderground observation time: %s", readStringValue("<observation_time>",0));
-    int timestamp = readIntValue("<observation_epoch>") - 1230768000;
+	int observation_epoch = readIntValue("<observation_epoch>");
+    int timestamp = observation_epoch - 1230768000;
     if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: timestamp for weather = %d", timestamp);
     int weatherCode = parseWeatherCode(readStringValue("<weather>", 0));
     if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
-    setweatherdata(1,  timestamp, readFloatValue("<temp_c>"));
-    setio("currentOutsideTemp", readFloatValue("<temp_c>"));
-    setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
+	float temp_c = readFloatValue("<temp_c>");
+    setweatherdata(1, timestamp, temp_c);
+    setio("currentOutsideTemp", temp_c);
     setweatherdata(3,  timestamp, readPercentageValue("<relative_humidity>"));
-    setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
     setweatherdata(5,  timestamp, readIntValue("<wind_degrees>"));
-    setweatherdata(9,  timestamp, readFloatValue("<precip_today_metric>"));
+    setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
     setweatherdata(11, timestamp, readIntValue("<pressure_mb>"));
-    setweatherdata(12, timestamp, readIntValue("<observation_epoch>"));
+    setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
+    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
+    setweatherdata(9,  timestamp, readFloatValue("<precip_today_metric>"));
     setweatherdata(22, timestamp, getcurrenttime());
     setweatherdata(23, timestamp, timestamp);
-    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
+    setweatherdata(12, timestamp, observation_epoch);
   }
 
   // Hourly forecasts
