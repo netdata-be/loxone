@@ -157,6 +157,8 @@ void parseHourly(int hour_offset)
   if (DEBUG_LEVEL > 1 ) printf("weatherservice [DEBUG]: Forecasted humidity = %d", readIntValue("<humidity>"));
   if (moveToKey("<feelslike>")) setweatherdata(26, timestamp, readFloatValue("<metric>"));
   if (moveToKey("<mslp>")) setweatherdata(11, timestamp, readIntValue("<metric>"));
+  // clear precip due to lack of data in forecasts
+  setweatherdata(9, timestamp, 0.0);
   free(temperature_var);
 }
 
@@ -167,22 +169,24 @@ void parseWeather()
   {
     if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: Getting current weather");
     printf("weatherservice [INFO]: Wunderground observation time: %s", readStringValue("<observation_time>",0));
-    int timestamp = readIntValue("<observation_epoch>") - 1230768000;
+	int observation_epoch = readIntValue("<observation_epoch>");
+    int timestamp = observation_epoch - 1230768000;
     if (DEBUG_LEVEL > 0 ) printf("weatherservice [INFO]: timestamp for weather = %d", timestamp);
     int weatherCode = parseWeatherCode(readStringValue("<weather>", 0));
     if (weatherCode > 0) setweatherdata(10, timestamp, weatherCode);
-    setweatherdata(1,  timestamp, readFloatValue("<temp_c>"));
-    setio("currentOutsideTemp", readFloatValue("<temp_c>"));
-    setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
+	float temp_c = readFloatValue("<temp_c>");
+    setweatherdata(1, timestamp, temp_c);
+    setio("currentOutsideTemp", temp_c);
     setweatherdata(3,  timestamp, readPercentageValue("<relative_humidity>"));
-    setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
     setweatherdata(5,  timestamp, readIntValue("<wind_degrees>"));
-    setweatherdata(9,  timestamp, readFloatValue("<precip_today_metric>"));
+    setweatherdata(4,  timestamp, readFloatValue("<wind_kph>"));
     setweatherdata(11, timestamp, readIntValue("<pressure_mb>"));
-    setweatherdata(12, timestamp, readIntValue("<observation_epoch>"));
+    setweatherdata(2,  timestamp, readFloatValue("<dewpoint_c>"));
+    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
+    setweatherdata(9,  timestamp, readFloatValue("<precip_today_metric>"));
     setweatherdata(22, timestamp, getcurrenttime());
     setweatherdata(23, timestamp, timestamp);
-    setweatherdata(26, timestamp, readFloatValue("<feelslike_c>"));
+    setweatherdata(12, timestamp, observation_epoch);
   }
 
   // Hourly forecasts
