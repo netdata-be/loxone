@@ -15,11 +15,11 @@
 
 #define BUFF_SIZE 80000
 #define RD_BLOCK_SIZE 128
-#define REFRESH_MIN 15 // refresh elke 15 minuten (developer account kan 500 calls per dag doen; =20 calls per uur)
+#define REFRESH_MIN 15 // refresh every 15 minutes (developer account 500 calls/day -->max 20 calls per hour)
 #define DEBUG_LEVEL 0  // 0 = disable ; 1 = INFO ; 2 = DEBUG
 
 // Settings
-// create yourself a (free) developer account on wunderground website; it can handdle up to 500 calls/day for free.
+// create yourself a (free) developer account on wunderground website; it can handle up to 500 calls/day for free.
 char* apiKey   = "YOUR-API-KEY";         // your personal 8 hex characters api key from your account at Wunderground (need to request this key once !)
 char* location = "YOUR-LOCATION";        // your location
 char* host     = "api.wunderground.com"; // The API URL in orde to get this working you need to use a DNS server
