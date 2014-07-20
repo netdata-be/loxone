@@ -4,17 +4,33 @@ You can add a weather service by opening the loxplan file with notepad
 And insert XML tags below after this line:
 
 ```xml
-    <Control V="63" UUID="4cbc6d88-93ce-11e2-bbe885f9504979e4" Title="Server communicatie" Type="WeatherCaption"/>
+    <Control V="63" UUID="????????-????-????-????????????????" Title="Server communicatie" Type="WeatherCaption"/>
 ```
 
 So here's the tag to insert:
 
 ```xml
     <Control V="63" UUID="6b028449-8152-11e1-b36ada6017029158" Title="myweather" Type="WeatherServer" Color="0,0,0" SType="1" Address="" Program="" VisuUUID="d83b0000-8727-11e1-bd1df582fe1a4aa2">
-    <IoData Visu="true" UserGroupRef="7e6c7840-74eb-11e1-9520fbc337c08ef8" UserGroupRefRemote="7e6c7840-74eb-11e1-9520fbc337c08ef8">
-    <LoggerMailer V="20" MinimumTime="20"/>
-    </IoData>
+        <IoData Visu="true" UserGroupRef="7e6c7840-74eb-11e1-9520fbc337c08ef8" UserGroupRefRemote="7e6c7840-74eb-11e1-9520fbc337c08ef8">
+            <LoggerMailer V="20" MinimumTime="20"/>
+        </IoData>
     </Control>
+```
+
+Starting with Loxone Config 5.1, use after:
+
+```xml
+	<C Type="WeatherCaption" V="70" U="????????-????-????-????????????????" Title="Serverkommunikation"/>
+```
+
+And the tag to insert:
+
+```xml
+    <C V="63" UUID="6b028449-8152-11e1-b36ada6017029158" Title="myweather" Type="WeatherServer" Color="0,0,0" SType="1" Address="" Program="" VisuUUID="d83b0000-8727-11e1-bd1df582fe1a4aa2">
+        <IoData Visu="true" UserGroupRef="7e6c7840-74eb-11e1-9520fbc337c08ef8" UserGroupRefRemote="7e6c7840-74eb-11e1-9520fbc337c08ef8">
+            <LoggerMailer V="20" MinimumTime="20"/>
+        </IoData>
+    </C>
 ```
 
 Then save the file and open in loxplan. You will see myweather in the server communication section.
