@@ -1,0 +1,105 @@
+########## Miniserver General info ############
+#  Curent date  : 2014-10-14
+#  Current Time : 09:14:10
+#  Current user : 0:No connection
+###############################################
+
+
+########## System Status ######################
+#  Cpu status                  : CPU:0 SPS:0 Cycles:50
+#  Heap usage                  : 16833/52773kB
+#  System interupts            : 238975235
+#  Communication  interupts    : 0
+#  Number of tasks             : 55
+#  Context switching           : 799610808
+#  Context switching interupts : 142520071
+###############################################
+
+
+########## PLC Status #########################
+#  PLC state       : Running
+#  PLC frequency   : Running 50/sec
+###############################################
+
+
+########## CAN bus Status #####################
+#  Packets Send       : 16066
+#  Packets Received   : 260123
+#  Packets Error      : 9
+#  Frame Errors       : 0
+#  Frame Overruns     : 0
+#  Parity Errors      : 0
+###############################################
+
+
+########## Network Config  ####################
+#  MAC address          : EE:E0:00:D8:07:39
+#  DHCP Setting         : No
+#  IP Address           : 192.168.50.30
+#  Netmask              : 255.255.255.0
+#  Gateway              : 192.168.50.1
+#  Primary DNS Server   : 192.168.50.1
+#  Secondary DNS Server : 0.0.0.0
+#  NTP Server           : ntp.belnet.be
+###############################################
+
+
+########## LAN interface Status ###############
+#  Packets send            : 1511577
+#  Packets send errors     : 0
+#  Packets send Collisions : 0
+#  Buffer errors           : 0
+#  Buffer under-run errors : 0
+#  Packets received        : 2222807
+#  EOF Errors              : 0
+#  Recieve overflow errors : 0
+#  No receive buffer errors: 0
+###############################################
+
+
+########## 1-Wire Status ######################
+{"LL": { "control": "dev/sys/ExtStatistics/05D808A4", "value": "
+1-Wire Serial 28.6A.04.82.05.00.00.E6: 15945 Packet Requests, 3 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.38.A8.81.05.00.00.3C: 15941 Packet Requests, 0 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.B8.5D.81.05.00.00.A2: 15943 Packet Requests, 2 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.35.8A.81.05.00.00.0D: 15941 Packet Requests, 0 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.01.1C.82.05.00.00.9F: 15942 Packet Requests, 1 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.99.CD.81.05.00.00.94: 15944 Packet Requests, 1 CRC Errors, 1 85 Degree Problems; 
+1-Wire Serial 28.55.5A.82.05.00.00.18: 15952 Packet Requests, 1 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.8C.A7.81.05.00.00.88: 15948 Packet Requests, 1 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.9D.3B.B0.04.00.00.1E: 15945 Packet Requests, 1 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.11.D9.4B.05.00.00.9E: 15943 Packet Requests, 1 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.14.2D.4D.05.00.00.C5: 15944 Packet Requests, 2 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.CB.06.4E.05.00.00.25: 15942 Packet Requests, 0 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.A2.67.05.05.00.00.D8: 15944 Packet Requests, 2 CRC Errors, 0 85 Degree Problems; 
+1-Wire Serial 28.BC.BC.81.05.00.00.69: 15941 Packet Requests, 0 CRC Errors, 0 85 Degree Problems; ", "Code": "200"}}
+###############################################
+
+
+########## Global Status ######################
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Status Modified="2014-10-14 09:14:15">
+	<Miniserver Type="0" Name="Loxone Miniserver" IP="192.168.50.30" Mask="255.255.255.0" Gateway="192.168.50.1" DHCP="false" DNS1="192.168.50.1" DNS2="0.0.0.0" MAC="EEE000D80739" Device="loxone-miniserver" Version="6.0.9.25" LANErrors="0.000%" LinkErrors="0">
+		<Extension Type="Extension" Code="5" Name="Verdeelbord Links R02 P02 (Loxone Extension)" Serial="01d80851" Version="6.0.9.25" Online="true"/>
+		<Extension Type="Extension" Code="5" Name="Verdeelbord Links R03 P01 (Loxone Extension)" Serial="01d811ba" Version="6.0.9.25" Online="true"/>
+		<Extension Type="Relay Extension" Code="160" Name="Verdeelbord rechts R03 P01 (Loxone Relay Extension)" Serial="0bd80617" Version="6.0.9.25" Online="true"/>
+		<Extension Type="Relay Extension" Code="160" Name="Verdeelbord Links R03 P02 (Loxone Relay Extension)" Serial="0bd8061c" Version="6.0.9.25" Online="true"/>
+		<Extension Type="1-Wire Extension" Code="8" Name="Verdeelbord rechts R03 P02 (Loxone 1-Wire Extension)" Serial="05d808a4" Version="6.0.9.25" Online="true">
+			<OneWireDevice Name="Temp Living achteraan" Code="101" Serial="28.6A.04.82.05.00.00.E6" Family="00000028" LastReceived="2014-10-14 09:14:05" TimeDiff="10"/>
+			<OneWireDevice Name="Temp Living Vooraan" Code="101" Serial="28.38.A8.81.05.00.00.3C" Family="00000028" LastReceived="2014-10-14 09:14:05" TimeDiff="10"/>
+			<OneWireDevice Name="Temp Slk Vooraan" Code="101" Serial="28.B8.5D.81.05.00.00.A2" Family="00000028" LastReceived="2014-10-14 09:14:05" TimeDiff="10"/>
+			<OneWireDevice Name="Temp Slk Achteraan" Code="101" Serial="28.35.8A.81.05.00.00.0D" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Slk Midden" Code="101" Serial="28.01.1C.82.05.00.00.9F" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Badkamer" Code="101" Serial="28.99.CD.81.05.00.00.94" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Gang beneden" Code="101" Serial="28.55.5A.82.05.00.00.18" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Keuken achteraan" Code="101" Serial="28.8C.A7.81.05.00.00.88" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Gang boven" Code="101" Serial="28.9D.3B.B0.04.00.00.1E" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp CV Retour" Code="101" Serial="28.11.D9.4B.05.00.00.9E" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp CV Aanvoer" Code="101" Serial="28.14.2D.4D.05.00.00.C5" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Buitengevel" Code="101" Serial="28.CB.06.4E.05.00.00.25" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp WC beneden" Code="101" Serial="28.A2.67.05.05.00.00.D8" Family="00000028" LastReceived="2014-10-14 09:14:06" TimeDiff="9"/>
+			<OneWireDevice Name="Temp Garage" Code="101" Serial="28.BC.BC.81.05.00.00.69" Family="00000028" LastReceived="2014-10-14 09:14:07" TimeDiff="8"/>
+		</Extension>
+	</Miniserver>
+</Status>
+###############################################
