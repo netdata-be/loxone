@@ -29,7 +29,7 @@ int downloadData()
   }
   while (count > 0);
   stream_close(tcpStream);
-  buffer[MAX_BUFF] = 0; //put null character or end of string at the end.
+  buffer[MAX_BUFF - 1] = 0; //put null character or end of string at the end.
   return 0;
 }
 
