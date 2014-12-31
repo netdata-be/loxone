@@ -2,15 +2,51 @@
 
 ## Remote control socket
 
+Here is a simple example on how you could control the SmartSocket:
 ![Example on how to control the socket](img/power_control.png)
 
+To control the socket you have to create a "virtual output":http://www.loxone.com/enuk/service/documentation/loxone-config/global-functions/virtual-io.html and a virtual output command.
+I have 3 smart sockets so I added 3 `Virtual outputs` and 3 `virtual output commands`.
+
+![My virtual outputs](img/virtual_output.png)
+
+Here are the details of the virtual output:
+
+![virtual output details](img/virtual_output_settings.png)
+
+And this is the `virtual output command`:
+
+![virtual output command details](img/virtual_output_command.png)
+
+For easy copy paste this are the settings:
+
+Command for On:
+
+    /goform/SystemCommand?command=GpioForCrond+1
+
+Command for Off:
+
+    /goform/SystemCommand?command=GpioForCrond+0
+
+That's it for remote controlling the socket.
+Now you are able to use this output command as a regular output in loxone.
+
 ## Power Consumption stats
+
+![Power Consumption](img/socket3.png)
+
+In order to collect the power consuption we need a PicoC script to parse the values.
+The source code for this PicoC program can be found here.
+
+This is how I configured in inside my loxone config:
+
+![Power Consumption config](img/powerstats.png)
 
 
 
 # Details about the smartSocket webservice
 
-I gathered here all the progress made on this "forum": http://www.dealabs.com/bons-plans/prise-wifi-/85521?page=36
+I gathered here all the progress made on this "forum":http://www.dealabs.com/bons-plans/prise-wifi-/85521?page=36
 
 Must be replaced by your IP 192.168.0.25 IP. Login / pase default password is admin / admin
 
