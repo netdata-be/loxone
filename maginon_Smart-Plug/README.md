@@ -3,6 +3,7 @@
 ## Remote control socket
 
 Here is a simple example on how you could control the SmartSocket:
+
 ![Example on how to control the socket](img/power_control.png)
 
 To control the socket you have to create a "virtual output":http://www.loxone.com/enuk/service/documentation/loxone-config/global-functions/virtual-io.html and a virtual output command.
