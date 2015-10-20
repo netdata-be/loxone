@@ -1,3 +1,18 @@
+# UPDATE 18/10/2015: Using this methode no longer works on the new smarthome app
+
+This was the response of loxone on this matter:
+
+```
+  I am sorry that your weather implementation stopped working.
+  Changing weather information was never supported.
+  We never suggest changing anything in .loxplan files.
+  Custom changes in .loxplan files can generate critical problems in Miniservers.
+
+  But there is a positive message also for you, we reworked weather completely. And is now available in your country
+```
+
+So be warned this will never work anymore
+
 # Step 1: Adding a weather service
 
 You can add a weather service by opening the loxplan file with notepad
